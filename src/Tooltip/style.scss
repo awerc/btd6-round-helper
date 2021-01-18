@@ -1,0 +1,83 @@
+.tooltip {
+    position: relative;
+
+    .container {
+        z-index: 1;
+        position: absolute;
+        padding: 5px 10px;
+        font-size: 16px;
+        cursor: default;
+        border-radius: 4px;
+        white-space: nowrap;
+        min-width: 20px;
+        max-width: 300px;
+        color: #fff;
+        background-color: rgb(44, 44, 44);
+        animation: fadeIn ease-in-out 0.1s;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+    }
+
+    .top {
+        bottom: calc(100% + 18px);
+        left: 50%;
+        transform: translateX(-50%);
+
+        .arrow {
+            bottom: -10px;
+            left: calc(50% - 10px);
+            border-right: 5px solid transparent;
+            border-top: 5px solid rgb(44, 44, 44);
+            border-left: 5px solid transparent;
+        }
+    }
+
+    .right,
+    .left {
+        top: 50%;
+        transform: translateY(-50%);
+
+        .arrow {
+            top: calc(50% - 5px);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+    }
+
+    .right {
+        left: calc(100% + 5px);
+
+        .arrow {
+            left: -5px;
+            border-right: 5px solid rgb(44, 44, 44);
+        }
+    }
+
+    .left {
+        right: calc(100% + 18px);
+
+        .arrow {
+            right: -10px;
+            border-left: 5px solid rgb(44, 44, 44);
+        }
+    }
+
+    .bottom {
+        top: calc(100% + 18px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

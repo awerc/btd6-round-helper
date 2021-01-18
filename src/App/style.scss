@@ -1,0 +1,57 @@
+.app {
+    display: grid;
+    grid-gap: 10px;
+    margin: 50px;
+
+
+
+
+    .controls {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, min-content);
+
+        .round-input {
+            font-size: 22px;
+            width: 100px;
+        }
+
+        button {
+            font-size: 22px;
+            width: 36px;
+        }
+
+        .alternate-checkbox {
+            display: flex;
+        }
+    }
+}
+
+.round-info {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    grid-auto-columns: max-content;
+    align-items: center;
+
+    .round {
+        text-align: center;
+    }
+
+    .info-icon {
+        width: 20px;
+    }
+}
+
+.bloons {
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    grid-template-columns: repeat(20, min-content);
+
+    .danger-icon {
+        width: 40px;
+        align-self: center;
+    }
+}

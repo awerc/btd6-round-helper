@@ -1,0 +1,14 @@
+.bloon {
+    position: relative;
+
+    .icon {
+        height: 50px;
+    }
+
+    .count {
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
