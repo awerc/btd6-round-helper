@@ -59,10 +59,10 @@ const App = () => {
                         />
                     </Col>
                     <Col flex="0">
-                        <Button type="dashed" icon={<MinusOutlined />} onClick={togglePrevRound} />
+                        <Button icon={<MinusOutlined />} onClick={togglePrevRound} />
                     </Col>
                     <Col flex="0">
-                        <Button type="dashed" icon={<PlusOutlined />} onClick={toggleNextRound} />
+                        <Button icon={<PlusOutlined />} onClick={toggleNextRound} />
                     </Col>
                 </Row>
             }
