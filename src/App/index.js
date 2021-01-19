@@ -1,15 +1,15 @@
 import React, {useState, useCallback, useMemo} from 'react';
+import {Card, Select, Statistic, Tooltip, Row, Col, Input, Button} from 'antd';
+import {PlusOutlined, MinusOutlined, QuestionCircleOutlined} from '@ant-design/icons';
 
 import Money from '../Money/index';
 import Bloon from '../Bloon/index';
 import {getRound} from './utils';
-import './style.scss';
 
-import {ROUNDS, ALTERNATE_ROUNDS} from './constants';
+import {ROUNDS, ALTERNATE_ROUNDS} from '../constants';
+import DangerIcon from '../DangerIcon';
 
-import questionIcon from '../bloons/question.svg';
-import dangerIcon from '../bloons/danger.svg';
-import Tooltip from '../Tooltip/index';
+const {Option} = Select;
 
 const MODES = {
     normal: 'normal',
@@ -23,46 +23,92 @@ const ROUNDS_BY_MODE = {
 
 const App = () => {
     const [round, setRound] = useState('1');
-    const setRoundSafe = useCallback(value => setRound(Number(value) ? String(value) : '1'));
+    const setRoundSafe = useCallback(value => Number(value) > 0 && setRound(value));
     const toggleNextRound = useCallback(() => setRoundSafe(String(+round + 1)), [round]);
     const togglePrevRound = useCallback(() => setRoundSafe(String(+round - 1)), [round]);
 
-    const [isAlternate, setAlternate] = useState(false);
-    const toggleAlternate = useCallback(() => setAlternate(!isAlternate), [isAlternate]);
-    const {red_eqv, money, bloons, danger} = useMemo(
-        () => getRound(ROUNDS_BY_MODE[isAlternate ? MODES.alternate : MODES.normal])(String(round)) || {},
-        [isAlternate, round],
-    );
+    const [mode, setMode] = useState(MODES.normal);
+    const {red_eqv, money, bloons, danger} = useMemo(() => getRound(ROUNDS_BY_MODE[mode])(String(round)) || {}, [
+        mode,
+        round,
+    ]);
 
     return (
-        <div className="app">
-            <div className="round-info">
-                <div className="fancy-text round">
-                    Round: <br /> {round}
-                </div>
-                {red_eqv && (
-                    <Tooltip text={`red eqv: ${red_eqv}`}>
-                        <img className="info-icon" src={questionIcon} alt="" />
-                    </Tooltip>
-                )}
-                <Money data={money} />
-            </div>
-            <div className="controls">
-                <input className="round-input" value={round} type="text" onChange={e => setRoundSafe(e.target.value)} />
-                <button onClick={togglePrevRound}>-</button>
-                <button onClick={toggleNextRound}>+</button>
-                <label className="alternate-checkbox">
-                    <input type="checkbox" onClick={toggleAlternate} checked={isAlternate} />
-                    alternate rounds
-                </label>
-            </div>
-            <div className="bloons">
-                {danger && <img className="danger-icon" src={dangerIcon} alt="" />}
-                {bloons?.map(bloon => (
-                    <Bloon key={[bloon?.name, bloon?.count, ...(bloon?.mods || [])].join(' ')} data={bloon} />
-                ))}
-            </div>
-        </div>
+        <Card
+            style={{
+                width: 400,
+                margin: 50,
+                boxShadow:
+                    '0 1px 2px -2px rgba(0, 0, 0, 0.16), ' +
+                    '0 3px 6px 0 rgba(0, 0, 0, 0.12), ' +
+                    '0 5px 12px 4px rgba(0, 0, 0, 0.09)',
+                borderColor: 'transparent',
+            }}
+            title={
+                <Row gutter={6} align="middle">
+                    <Col span={16}>
+                        <Input
+                            value={round}
+                            onChange={e => setRoundSafe(e.target.value)}
+                            addonAfter={
+                                <Select value={mode} onSelect={setMode}>
+                                    <Option value={MODES.normal}>{MODES.normal}</Option>
+                                    <Option value={MODES.alternate}>{MODES.alternate}</Option>
+                                </Select>
+                            }
+                        />
+                    </Col>
+                    <Col flex="0">
+                        <Button type="dashed" icon={<MinusOutlined />} onClick={togglePrevRound} />
+                    </Col>
+                    <Col flex="0">
+                        <Button type="dashed" icon={<PlusOutlined />} onClick={toggleNextRound} />
+                    </Col>
+                </Row>
+            }
+        >
+            <Col gutter={16}>
+                <Row gutter={[16, 16]}>
+                    <Col span={12}>
+                        <Statistic
+                            title="Round"
+                            value={round}
+                            suffix={
+                                red_eqv && (
+                                    <Tooltip placement="right" title={`red eqv: ${red_eqv}`}>
+                                        <QuestionCircleOutlined style={{color: '#555'}} />
+                                    </Tooltip>
+                                )
+                            }
+                        />
+                    </Col>
+                    {money && (
+                        <Col span={12}>
+                            <Money data={money} />
+                        </Col>
+                    )}
+                </Row>
+
+                <Statistic
+                    title="Bloons"
+                    value={
+                        <Row gutter={[16, 16]} align="middle">
+                            {danger && (
+                                <Col style={{display: 'flex'}}>
+                                    <DangerIcon style={{fontSize: '35px'}} />
+                                </Col>
+                            )}
+                            {bloons?.map(bloon => (
+                                <Col key={[bloon?.name, bloon?.count, ...(bloon?.mods || [])].join(' ')}>
+                                    <Bloon data={bloon} />
+                                </Col>
+                            ))}
+                        </Row>
+                    }
+                    formatter={value => value}
+                />
+            </Col>
+        </Card>
     );
 };
 

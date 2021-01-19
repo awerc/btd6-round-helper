@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import {Tooltip} from 'antd';
 
 import branch from '../branch';
-import Tooltip from '../Tooltip/index';
 import './style.scss';
 
 const Bloon = ({data}) => {
@@ -27,7 +27,7 @@ const Bloon = ({data}) => {
     }
 
     return (
-        <Tooltip text={tooltip}>
+        <Tooltip placement="right" title={tooltip}>
             <div className="bloon">
                 <img className="icon" src={image} alt={name} />
                 {count && <span className="fancy-text count">{count}</span>}

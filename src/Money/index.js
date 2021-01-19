@@ -1,28 +1,51 @@
 import React from 'react';
+import {Tooltip, Row, Col, Statistic} from 'antd';
 
-import './style.scss';
 import branch from '../branch';
 import moneyIcon from '../bloons/money.png';
-import Tooltip from '../Tooltip';
 
 const Money = ({data}) => {
     const {pop, total, cumulative} = data || {};
 
     return (
-        <div className="money">
-            <Tooltip
-                text={
-                    <div>
-                        {pop && <div>pop: {pop}</div>}
-                        {pop && total && <div>finish: {total - pop}</div>}
-                        {total && <div>total: {total}</div>}
-                        {cumulative && <div>cumulative: {cumulative}</div>}
-                    </div>
-                }
-            >
-                <img className="icon" src={moneyIcon} alt="" />
-            </Tooltip>
-        </div>
+        <Statistic
+            title="Money"
+            value={total}
+            suffix={
+                <Tooltip
+                    placement="right"
+                    title={
+                        <div>
+                            {pop && <div>pop: {pop}</div>}
+                            {pop && total && <div>finish: {total - pop}</div>}
+                            {cumulative && <div>cumulative: {cumulative}</div>}
+                        </div>
+                    }
+                >
+                    <img style={{width: '40px'}} src={moneyIcon} alt="" />
+                </Tooltip>
+            }
+        />
+    );
+
+    return (
+        <Row gutter={8} align="middle">
+            <Col>{total}</Col>
+            <Col>
+                <Tooltip
+                    placement="right"
+                    title={
+                        <div>
+                            {pop && <div>pop: {pop}</div>}
+                            {pop && total && <div>finish: {total - pop}</div>}
+                            {cumulative && <div>cumulative: {cumulative}</div>}
+                        </div>
+                    }
+                >
+                    <img style={{width: '40px'}} src={moneyIcon} alt="" />
+                </Tooltip>
+            </Col>
+        </Row>
     );
 };
 
