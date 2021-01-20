@@ -36,7 +36,7 @@ const App = () => {
     return (
         <Card
             style={{
-                width: 400,
+                width: 'min(calc(100% - 100px), 400px)',
                 margin: 50,
                 boxShadow:
                     '0 1px 2px -2px rgba(0, 0, 0, 0.16), ' +
