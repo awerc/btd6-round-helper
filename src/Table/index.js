@@ -1,0 +1,44 @@
+import React from 'react';
+import {Table} from 'antd';
+
+import {getRound} from '../utils';
+
+import {ROUNDS_BY_MODE} from '../constants';
+import BloonsList from '../BloonsList';
+
+const COLUMNS = [
+    {
+        title: '',
+        dataIndex: 'round',
+        key: 'round',
+        width: '70px',
+    },
+    {
+        title: 'Bloons',
+        dataIndex: 'bloons',
+        key: 'bloons',
+        render: ({red_eqv, money, bloons, danger}) => <BloonsList {...{bloons, danger, wrap: false}} />,
+    },
+];
+
+const Widget = ({mode}) => {
+    const dataSource = new Array(100).fill(undefined).map((_, index) => ({
+        key: index + 1,
+        round: index + 1,
+        bloons: getRound(ROUNDS_BY_MODE[mode])(String(index + 1)) || {},
+    }));
+
+    return (
+        <Table
+            scroll={{x: true}}
+            style={{maxWidth: 'min(500px, 100%)', margin: 20}}
+            size="small"
+            sticky
+            pagination={{position: ['bottomLeft']}}
+            columns={COLUMNS}
+            dataSource={dataSource}
+        />
+    );
+};
+
+export default Widget;

@@ -2,32 +2,20 @@ import React, {useState, useCallback, useMemo} from 'react';
 import {Card, Select, Statistic, Tooltip, Row, Col, Input, Button} from 'antd';
 import {PlusOutlined, MinusOutlined, QuestionCircleOutlined} from '@ant-design/icons';
 
-import Money from '../Money/index';
-import Bloon from '../Bloon/index';
-import {getRound} from './utils';
+import Money from '../Money';
+import BloonsList from '../BloonsList';
+import {getRound} from '../utils';
 
-import {ROUNDS, ALTERNATE_ROUNDS} from '../constants';
-import DangerIcon from '../DangerIcon';
+import {MODES, ROUNDS_BY_MODE} from '../constants';
 
 const {Option} = Select;
 
-const MODES = {
-    normal: 'normal',
-    alternate: 'alternate',
-};
-
-const ROUNDS_BY_MODE = {
-    [MODES.normal]: ROUNDS,
-    [MODES.alternate]: ALTERNATE_ROUNDS,
-};
-
-const App = () => {
+const Widget = ({mode, setMode}) => {
     const [round, setRound] = useState('1');
     const setRoundSafe = useCallback(value => Number(value) > 0 && setRound(value));
     const toggleNextRound = useCallback(() => setRoundSafe(String(+round + 1)), [round]);
     const togglePrevRound = useCallback(() => setRoundSafe(String(+round - 1)), [round]);
 
-    const [mode, setMode] = useState(MODES.normal);
     const {red_eqv, money, bloons, danger} = useMemo(() => getRound(ROUNDS_BY_MODE[mode])(String(round)) || {}, [
         mode,
         round,
@@ -36,8 +24,8 @@ const App = () => {
     return (
         <Card
             style={{
-                width: 'min(calc(100% - 100px), 400px)',
-                margin: 50,
+                width: 'min(calc(100% - 40px), 400px)',
+                margin: 20,
                 boxShadow:
                     '0 1px 2px -2px rgba(0, 0, 0, 0.16), ' +
                     '0 3px 6px 0 rgba(0, 0, 0, 0.12), ' +
@@ -45,9 +33,10 @@ const App = () => {
                 borderColor: 'transparent',
             }}
             title={
-                <Row gutter={6} align="middle">
-                    <Col span={16}>
+                <Row gutter={[6, 6]} align="middle">
+                    <Col span={16} style={{maxWidth: 'unset'}}>
                         <Input
+                            style={{minWidth: '150px'}}
                             value={round}
                             onChange={e => setRoundSafe(e.target.value)}
                             addonAfter={
@@ -92,18 +81,7 @@ const App = () => {
                 <Statistic
                     title="Bloons"
                     value={
-                        <Row gutter={[16, 16]} align="middle">
-                            {danger && (
-                                <Col style={{display: 'flex'}}>
-                                    <DangerIcon style={{fontSize: '35px'}} />
-                                </Col>
-                            )}
-                            {bloons?.map(bloon => (
-                                <Col key={[bloon?.name, bloon?.count, ...(bloon?.mods || [])].join(' ')}>
-                                    <Bloon data={bloon} />
-                                </Col>
-                            ))}
-                        </Row>
+                        <BloonsList {...{bloons, danger}} />
                     }
                     formatter={value => value}
                 />
@@ -112,4 +90,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Widget;
