@@ -1,7 +1,7 @@
 export const ROUNDS = [
     {
         round: '1',
-        red_eqv: 20,
+        rbe: 20,
         money: {
             pop: 20,
             total: 121,
@@ -16,7 +16,7 @@ export const ROUNDS = [
     },
     {
         round: '2',
-        red_eqv: 35,
+        rbe: 35,
         money: {
             pop: 35,
             total: 137,
@@ -31,7 +31,7 @@ export const ROUNDS = [
     },
     {
         round: '3',
-        red_eqv: 35,
+        rbe: 35,
         money: {
             pop: 35,
             total: 138,
@@ -50,7 +50,7 @@ export const ROUNDS = [
     },
     {
         round: '4',
-        red_eqv: 71,
+        rbe: 71,
         money: {
             pop: 71,
             total: 175,
@@ -69,7 +69,7 @@ export const ROUNDS = [
     },
     {
         round: '5',
-        red_eqv: 59,
+        rbe: 59,
         money: {
             pop: 59,
             total: 164,
@@ -88,7 +88,7 @@ export const ROUNDS = [
     },
     {
         round: '6',
-        red_eqv: 57,
+        rbe: 57,
         money: {
             pop: 57,
             total: 163,
@@ -111,7 +111,7 @@ export const ROUNDS = [
     },
     {
         round: '7',
-        red_eqv: 75,
+        rbe: 75,
         money: {
             pop: 75,
             total: 182,
@@ -134,7 +134,7 @@ export const ROUNDS = [
     },
     {
         round: '8',
-        red_eqv: 92,
+        rbe: 92,
         money: {
             pop: 92,
             total: 200,
@@ -157,7 +157,7 @@ export const ROUNDS = [
     },
     {
         round: '9',
-        red_eqv: 90,
+        rbe: 90,
         money: {
             pop: 90,
             total: 199,
@@ -172,7 +172,7 @@ export const ROUNDS = [
     },
     {
         round: '10',
-        red_eqv: 204,
+        rbe: 204,
         money: {
             pop: 204,
             total: 314,
@@ -187,7 +187,7 @@ export const ROUNDS = [
     },
     {
         round: '11',
-        red_eqv: 78,
+        rbe: 78,
         money: {
             pop: 78,
             total: 189,
@@ -214,7 +214,7 @@ export const ROUNDS = [
     },
     {
         round: '12',
-        red_eqv: 80,
+        rbe: 80,
         money: {
             pop: 80,
             total: 192,
@@ -237,7 +237,7 @@ export const ROUNDS = [
     },
     {
         round: '13',
-        red_eqv: 169,
+        rbe: 169,
         money: {
             pop: 169,
             total: 282,
@@ -256,7 +256,7 @@ export const ROUNDS = [
     },
     {
         round: '14',
-        red_eqv: 145,
+        rbe: 145,
         money: {
             pop: 145,
             total: 259,
@@ -283,7 +283,7 @@ export const ROUNDS = [
     },
     {
         round: '15',
-        red_eqv: 151,
+        rbe: 151,
         money: {
             pop: 151,
             total: 266,
@@ -314,7 +314,7 @@ export const ROUNDS = [
     },
     {
         round: '16',
-        red_eqv: 152,
+        rbe: 152,
         money: {
             pop: 152,
             total: 268,
@@ -333,7 +333,7 @@ export const ROUNDS = [
     },
     {
         round: '17',
-        red_eqv: 48,
+        rbe: 48,
         money: {
             pop: 48,
             total: 165,
@@ -349,7 +349,7 @@ export const ROUNDS = [
     },
     {
         round: '18',
-        red_eqv: 240,
+        rbe: 240,
         money: {
             pop: 240,
             total: 358,
@@ -364,7 +364,7 @@ export const ROUNDS = [
     },
     {
         round: '19',
-        red_eqv: 141,
+        rbe: 141,
         money: {
             pop: 141,
             total: 260,
@@ -392,7 +392,7 @@ export const ROUNDS = [
     },
     {
         round: '20',
-        red_eqv: 66,
+        rbe: 66,
         money: {
             pop: 66,
             total: 186,
@@ -407,7 +407,7 @@ export const ROUNDS = [
     },
     {
         round: '21',
-        red_eqv: 230,
+        rbe: 230,
         money: {
             pop: 230,
             total: 351,
@@ -426,7 +426,7 @@ export const ROUNDS = [
     },
     {
         round: '22',
-        red_eqv: 176,
+        rbe: 176,
         money: {
             pop: 176,
             total: 298,
@@ -441,7 +441,7 @@ export const ROUNDS = [
     },
     {
         round: '23',
-        red_eqv: 154,
+        rbe: 154,
         money: {
             pop: 154,
             total: 277,
@@ -460,7 +460,7 @@ export const ROUNDS = [
     },
     {
         round: '24',
-        red_eqv: 43,
+        rbe: 43,
         money: {
             pop: 43,
             total: 167,
@@ -480,7 +480,7 @@ export const ROUNDS = [
     },
     {
         round: '25',
-        red_eqv: 210,
+        rbe: 210,
         money: {
             pop: 210,
             total: 335,
@@ -500,7 +500,7 @@ export const ROUNDS = [
     },
     {
         round: '26',
-        red_eqv: 207,
+        rbe: 207,
         money: {
             pop: 207,
             total: 333,
@@ -519,7 +519,7 @@ export const ROUNDS = [
     },
     {
         round: '27',
-        red_eqv: 535,
+        rbe: 535,
         money: {
             pop: 535,
             total: 662,
@@ -546,7 +546,7 @@ export const ROUNDS = [
     },
     {
         round: '28',
-        red_eqv: 138,
+        rbe: 138,
         money: {
             pop: 138,
             total: 266,
@@ -561,7 +561,7 @@ export const ROUNDS = [
     },
     {
         round: '29',
-        red_eqv: 260,
+        rbe: 260,
         money: {
             pop: 260,
             total: 389,
@@ -581,7 +581,7 @@ export const ROUNDS = [
     },
     {
         round: '30',
-        red_eqv: 207,
+        rbe: 207,
         money: {
             pop: 207,
             total: 337,
@@ -596,7 +596,7 @@ export const ROUNDS = [
     },
     {
         round: '31',
-        red_eqv: 406,
+        rbe: 406,
         money: {
             pop: 406,
             total: 537,
@@ -624,7 +624,7 @@ export const ROUNDS = [
     },
     {
         round: '32',
-        red_eqv: 545,
+        rbe: 545,
         money: {
             pop: 545,
             total: 627,
@@ -651,7 +651,7 @@ export const ROUNDS = [
     },
     {
         round: '33',
-        red_eqv: 72,
+        rbe: 72,
         money: {
             pop: 72,
             total: 205,
@@ -672,7 +672,7 @@ export const ROUNDS = [
     },
     {
         round: '34',
-        red_eqv: 778,
+        rbe: 778,
         money: {
             pop: 778,
             total: 912,
@@ -691,7 +691,7 @@ export const ROUNDS = [
     },
     {
         round: '35',
-        red_eqv: 1015,
+        rbe: 1015,
         money: {
             pop: 1015,
             total: 1150,
@@ -718,7 +718,7 @@ export const ROUNDS = [
     },
     {
         round: '36',
-        red_eqv: 760,
+        rbe: 760,
         money: {
             pop: 760,
             total: 896,
@@ -738,7 +738,7 @@ export const ROUNDS = [
     },
     {
         round: '37',
-        red_eqv: 1202,
+        rbe: 1202,
         money: {
             pop: 1202,
             total: 1339,
@@ -770,7 +770,7 @@ export const ROUNDS = [
     },
     {
         round: '38',
-        red_eqv: 1157,
+        rbe: 1157,
         money: {
             pop: 1139,
             total: 1277,
@@ -801,7 +801,7 @@ export const ROUNDS = [
     },
     {
         round: '39',
-        red_eqv: 1620,
+        rbe: 1620,
         money: {
             pop: 1620,
             total: 1759,
@@ -833,7 +833,7 @@ export const ROUNDS = [
     },
     {
         round: '40',
-        red_eqv: 616,
+        rbe: 616,
         money: {
             pop: 381,
             total: 521,
@@ -848,7 +848,7 @@ export const ROUNDS = [
     },
     {
         round: '41',
-        red_eqv: 2040,
+        rbe: 2040,
         money: {
             pop: 2040,
             total: 2181,
@@ -867,7 +867,7 @@ export const ROUNDS = [
     },
     {
         round: '42',
-        red_eqv: 517,
+        rbe: 517,
         money: {
             pop: 517,
             total: 659,
@@ -888,7 +888,7 @@ export const ROUNDS = [
     },
     {
         round: '43',
-        red_eqv: 1198,
+        rbe: 1198,
         money: {
             pop: 1135,
             total: 1278,
@@ -907,7 +907,7 @@ export const ROUNDS = [
     },
     {
         round: '44',
-        red_eqv: 1150,
+        rbe: 1150,
         money: {
             pop: 1150,
             total: 1294,
@@ -922,7 +922,7 @@ export const ROUNDS = [
     },
     {
         round: '45',
-        red_eqv: 2289,
+        rbe: 2289,
         money: {
             pop: 2289,
             total: 2422,
@@ -951,7 +951,7 @@ export const ROUNDS = [
     },
     {
         round: '46',
-        red_eqv: 684,
+        rbe: 684,
         money: {
             pop: 570,
             total: 716,
@@ -967,7 +967,7 @@ export const ROUNDS = [
     },
     {
         round: '47',
-        red_eqv: 1598,
+        rbe: 1598,
         money: {
             pop: 1490,
             total: 1637,
@@ -987,7 +987,7 @@ export const ROUNDS = [
     },
     {
         round: '48',
-        red_eqv: 2752,
+        rbe: 2752,
         money: {
             pop: 2695,
             total: 2843,
@@ -1017,7 +1017,7 @@ export const ROUNDS = [
     },
     {
         round: '49',
-        red_eqv: 4771,
+        rbe: 4771,
         money: {
             pop: 4609,
             total: 4758,
@@ -1049,7 +1049,7 @@ export const ROUNDS = [
     },
     {
         round: '50',
-        red_eqv: 3540,
+        rbe: 3540,
         money: {
             pop: 2866,
             total: 3016,
@@ -1077,7 +1077,7 @@ export const ROUNDS = [
     },
     {
         round: '51',
-        red_eqv: 2030,
+        rbe: 2030,
         money: {
             pop: 947,
             total: 1098,
@@ -1098,7 +1098,7 @@ export const ROUNDS = [
     },
     {
         round: '52',
-        red_eqv: 3447,
+        rbe: 3447,
         money: {
             pop: 1444,
             total: 1596,
@@ -1121,7 +1121,7 @@ export const ROUNDS = [
     },
     {
         round: '53',
-        red_eqv: 2248,
+        rbe: 2248,
         money: {
             pop: 771,
             total: 924,
@@ -1141,7 +1141,7 @@ export const ROUNDS = [
     },
     {
         round: '54',
-        red_eqv: 4872,
+        rbe: 4872,
         money: {
             pop: 2044,
             total: 2198,
@@ -1160,7 +1160,7 @@ export const ROUNDS = [
     },
     {
         round: '55',
-        red_eqv: 5296,
+        rbe: 5296,
         money: {
             pop: 2328,
             total: 2483,
@@ -1179,7 +1179,7 @@ export const ROUNDS = [
     },
     {
         round: '56',
-        red_eqv: 2496,
+        rbe: 2496,
         money: {
             pop: 1130,
             total: 1286,
@@ -1199,7 +1199,7 @@ export const ROUNDS = [
     },
     {
         round: '57',
-        red_eqv: 4344,
+        rbe: 4344,
         money: {
             pop: 1702,
             total: 1859,
@@ -1218,7 +1218,7 @@ export const ROUNDS = [
     },
     {
         round: '58',
-        red_eqv: 5780,
+        rbe: 5780,
         money: {
             pop: 2140,
             total: 2298,
@@ -1242,7 +1242,7 @@ export const ROUNDS = [
     },
     {
         round: '59',
-        red_eqv: 4270,
+        rbe: 4270,
         money: {
             pop: 2000,
             total: 2159,
@@ -1267,7 +1267,7 @@ export const ROUNDS = [
     },
     {
         round: '60',
-        red_eqv: 3164,
+        rbe: 3164,
         money: {
             pop: 763,
             total: 923,
@@ -1282,7 +1282,7 @@ export const ROUNDS = [
     },
     {
         round: '61',
-        red_eqv: 6530,
+        rbe: 6530,
         money: {
             pop: 1070,
             total: 1231,
@@ -1302,7 +1302,7 @@ export const ROUNDS = [
     },
     {
         round: '62',
-        red_eqv: 8247,
+        rbe: 8247,
         money: {
             pop: 1225,
             total: 1387,
@@ -1332,7 +1332,7 @@ export const ROUNDS = [
     {
         round: '63',
         danger: true,
-        red_eqv: 14413,
+        rbe: 14413,
         money: {
             pop: 2663,
             total: 2826,
@@ -1351,7 +1351,7 @@ export const ROUNDS = [
     },
     {
         round: '64',
-        red_eqv: 6264,
+        rbe: 6264,
         money: {
             pop: 686,
             total: 850,
@@ -1371,7 +1371,7 @@ export const ROUNDS = [
     },
     {
         round: '65',
-        red_eqv: 18966,
+        rbe: 18966,
         money: {
             pop: 2906,
             total: 3071,
@@ -1402,7 +1402,7 @@ export const ROUNDS = [
     },
     {
         round: '66',
-        red_eqv: 7496,
+        rbe: 7496,
         money: {
             pop: 838,
             total: 1004,
@@ -1422,7 +1422,7 @@ export const ROUNDS = [
     },
     {
         round: '67',
-        red_eqv: 6410,
+        rbe: 6410,
         money: {
             pop: 857,
             total: 1024,
@@ -1442,7 +1442,7 @@ export const ROUNDS = [
     },
     {
         round: '68',
-        red_eqv: 5628,
+        rbe: 5628,
         money: {
             pop: 610,
             total: 778,
@@ -1461,7 +1461,7 @@ export const ROUNDS = [
     },
     {
         round: '69',
-        red_eqv: 6680,
+        rbe: 6680,
         money: {
             pop: 1222,
             total: 1391,
@@ -1486,7 +1486,7 @@ export const ROUNDS = [
     },
     {
         round: '70',
-        red_eqv: 13184,
+        rbe: 13184,
         money: {
             pop: 2449,
             total: 2619,
@@ -1510,7 +1510,7 @@ export const ROUNDS = [
     },
     {
         round: '71',
-        red_eqv: 9280,
+        rbe: 9280,
         money: {
             pop: 1332,
             total: 1503,
@@ -1529,7 +1529,7 @@ export const ROUNDS = [
     },
     {
         round: '72',
-        red_eqv: 10280,
+        rbe: 10280,
         money: {
             pop: 1332,
             total: 1504,
@@ -1549,7 +1549,7 @@ export const ROUNDS = [
     },
     {
         round: '73',
-        red_eqv: 11256,
+        rbe: 11256,
         money: {
             pop: 1220,
             total: 1392,
@@ -1568,7 +1568,7 @@ export const ROUNDS = [
     },
     {
         round: '74',
-        red_eqv: 18054,
+        rbe: 18054,
         money: {
             pop: 2870,
             total: 3044,
@@ -1597,7 +1597,7 @@ export const ROUNDS = [
     },
     {
         round: '75',
-        red_eqv: 25402,
+        rbe: 25402,
         money: {
             pop: 2493,
             total: 2668,
@@ -1626,7 +1626,7 @@ export const ROUNDS = [
     },
     {
         round: '76',
-        red_eqv: 6240,
+        rbe: 6240,
         money: {
             pop: 1140,
             total: 1316,
@@ -1642,7 +1642,7 @@ export const ROUNDS = [
     },
     {
         round: '77',
-        red_eqv: 22596,
+        rbe: 22596,
         money: {
             pop: 2363,
             total: 2540,
@@ -1661,7 +1661,7 @@ export const ROUNDS = [
     },
     {
         round: '78',
-        red_eqv: 26382,
+        rbe: 26382,
         money: {
             pop: 4684,
             total: 4862,
@@ -1693,7 +1693,7 @@ export const ROUNDS = [
     },
     {
         round: '79',
-        red_eqv: 45804,
+        rbe: 45804,
         money: {
             pop: 6530,
             total: 6709,
@@ -1718,7 +1718,7 @@ export const ROUNDS = [
     },
     {
         round: '80',
-        red_eqv: 16656,
+        rbe: 16656,
         money: {
             pop: 1220,
             total: 1400,
@@ -1733,7 +1733,7 @@ export const ROUNDS = [
     },
     {
         round: '81',
-        red_eqv: 44506,
+        rbe: 44506,
         money: {
             pop: 5185,
             total: 5366,
@@ -1748,7 +1748,7 @@ export const ROUNDS = [
     },
     {
         round: '82',
-        red_eqv: 52320,
+        rbe: 52320,
         money: {
             pop: 4575,
             total: 4757,
@@ -1768,7 +1768,7 @@ export const ROUNDS = [
     },
     {
         round: '83',
-        red_eqv: 25050,
+        rbe: 25050,
         money: {
             pop: 4566,
             total: 4749,
@@ -1797,7 +1797,7 @@ export const ROUNDS = [
     },
     {
         round: '84',
-        red_eqv: 51480,
+        rbe: 51480,
         money: {
             pop: 6860,
             total: 7044,
@@ -1816,7 +1816,7 @@ export const ROUNDS = [
     },
     {
         round: '85',
-        red_eqv: 30731,
+        rbe: 30731,
         money: {
             pop: 2441,
             total: 2626,
@@ -1831,7 +1831,7 @@ export const ROUNDS = [
     },
     {
         round: '86',
-        red_eqv: 27013,
+        rbe: 27013,
         money: {
             pop: 762,
             total: 948,
@@ -1847,7 +1847,7 @@ export const ROUNDS = [
     },
     {
         round: '87',
-        red_eqv: 63008,
+        rbe: 63008,
         money: {
             pop: 2440,
             total: 2627,
@@ -1862,7 +1862,7 @@ export const ROUNDS = [
     },
     {
         round: '88',
-        red_eqv: 63600,
+        rbe: 63600,
         money: {
             pop: 3126,
             total: 3314,
@@ -1885,7 +1885,7 @@ export const ROUNDS = [
     },
     {
         round: '89',
-        red_eqv: 64336,
+        rbe: 64336,
         money: {
             pop: 1982,
             total: 2171,
@@ -1906,7 +1906,7 @@ export const ROUNDS = [
     },
     {
         round: '90',
-        red_eqv: 2756,
+        rbe: 2756,
         money: {
             pop: 150,
             total: 340,
@@ -1926,7 +1926,7 @@ export const ROUNDS = [
     },
     {
         round: '91',
-        red_eqv: 71160,
+        rbe: 71160,
         money: {
             pop: 4000,
             total: 4191,
@@ -1946,7 +1946,7 @@ export const ROUNDS = [
     },
     {
         round: '92',
-        red_eqv: 117408,
+        rbe: 117408,
         money: {
             pop: 4345,
             total: 4537,
@@ -1966,7 +1966,7 @@ export const ROUNDS = [
     },
     {
         round: '93',
-        red_eqv: 62936,
+        rbe: 62936,
         money: {
             pop: 1754,
             total: 1947,
@@ -1986,7 +1986,7 @@ export const ROUNDS = [
     },
     {
         round: '94',
-        red_eqv: 178112,
+        rbe: 178112,
         money: {
             pop: 7473,
             total: 7667,
@@ -2005,7 +2005,7 @@ export const ROUNDS = [
     },
     {
         round: '95',
-        red_eqv: 80860,
+        rbe: 80860,
         money: {
             pop: 3523,
             total: 3718,
@@ -2035,7 +2035,7 @@ export const ROUNDS = [
     },
     {
         round: '96',
-        red_eqv: 238928,
+        rbe: 238928,
         money: {
             pop: 9759,
             total: 9955,
@@ -2059,7 +2059,7 @@ export const ROUNDS = [
     },
     {
         round: '97',
-        red_eqv: 69984,
+        rbe: 69984,
         money: {
             pop: 1221,
             total: 1418,
@@ -2075,7 +2075,7 @@ export const ROUNDS = [
     },
     {
         round: '98',
-        red_eqv: 327456,
+        rbe: 327456,
         money: {
             pop: 9455,
             total: 9653,
@@ -2095,7 +2095,7 @@ export const ROUNDS = [
     },
     {
         round: '99',
-        red_eqv: 47424,
+        rbe: 47424,
         money: {
             pop: 2629,
             total: 2828,
@@ -2115,7 +2115,7 @@ export const ROUNDS = [
     },
     {
         round: '100',
-        red_eqv: 67200,
+        rbe: 67200,
         money: {
             pop: 1335,
             total: 1535,
@@ -2285,7 +2285,7 @@ export const ROUNDS = [
     },
     {
         round: '200',
-        red_eqv: 196720,
+        rbe: 196720,
         money: {
             pop: 533,
             total: 833,
@@ -2373,7 +2373,7 @@ export const ROUNDS = [
     },
     {
         round: '10000',
-        red_eqv: 396009836000,
+        rbe: 396009836000,
         bloons: [
             {
                 name: 'b.a.d',
@@ -2384,7 +2384,7 @@ export const ROUNDS = [
     },
     {
         round: '10001',
-        red_eqv: 1139886,
+        rbe: 1139886,
         bloons: [
             {
                 name: 'fortified',
@@ -2395,7 +2395,7 @@ export const ROUNDS = [
     },
     {
         round: '10002',
-        red_eqv: 61600,
+        rbe: 61600,
         bloons: [
             {
                 name: 'm.o.a.b',
@@ -2405,7 +2405,7 @@ export const ROUNDS = [
     },
     {
         round: '10003',
-        red_eqv: 316400,
+        rbe: 316400,
         bloons: [
             {
                 name: 'b.f.b',
@@ -2415,7 +2415,7 @@ export const ROUNDS = [
     },
     {
         round: '10004',
-        red_eqv: 1665600,
+        rbe: 1665600,
         bloons: [
             {
                 name: 'z.o.m.g',
@@ -2425,7 +2425,7 @@ export const ROUNDS = [
     },
     {
         round: '10005',
-        red_eqv: 81600,
+        rbe: 81600,
         bloons: [
             {
                 name: 'd.d.t',
@@ -2435,7 +2435,7 @@ export const ROUNDS = [
     },
     {
         round: '10006-3865536',
-        red_eqv: 396009836000,
+        rbe: 396009836000,
         bloons: [
             {
                 name: 'b.a.d',

@@ -16,7 +16,7 @@ const Widget = ({mode, setMode}) => {
     const toggleNextRound = useCallback(() => setRoundSafe(String(+round + 1)), [round]);
     const togglePrevRound = useCallback(() => setRoundSafe(String(+round - 1)), [round]);
 
-    const {red_eqv, money, bloons, danger} = useMemo(() => getRound(ROUNDS_BY_MODE[mode])(String(round)) || {}, [
+    const {rbe, money, bloons, danger} = useMemo(() => getRound(ROUNDS_BY_MODE[mode])(String(round)) || {}, [
         mode,
         round,
     ]);
@@ -24,7 +24,7 @@ const Widget = ({mode, setMode}) => {
     return (
         <Card
             style={{
-                width: 'min(calc(100% - 40px), 400px)',
+                width: 'min(calc(100% - 40px), 500px)',
                 margin: 20,
                 boxShadow:
                     '0 1px 2px -2px rgba(0, 0, 0, 0.16), ' +
@@ -63,8 +63,8 @@ const Widget = ({mode, setMode}) => {
                             title="Round"
                             value={round}
                             suffix={
-                                red_eqv && (
-                                    <Tooltip placement="right" title={`red eqv: ${red_eqv}`}>
+                                rbe && (
+                                    <Tooltip placement="right" title={`RBE: ${rbe}`}>
                                         <QuestionCircleOutlined style={{color: '#555'}} />
                                     </Tooltip>
                                 )

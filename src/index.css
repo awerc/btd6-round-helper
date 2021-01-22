@@ -19,11 +19,10 @@ code {
     user-select: none;
 }
 
-.row {
+.app {
     display: flex;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: auto;
 }

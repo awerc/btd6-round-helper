@@ -17,7 +17,7 @@ const COLUMNS = [
         title: 'Bloons',
         dataIndex: 'bloons',
         key: 'bloons',
-        render: ({red_eqv, money, bloons, danger}) => <BloonsList {...{bloons, danger, wrap: false}} />,
+        render: ({rbe, money, bloons, danger}) => <BloonsList {...{bloons, danger, wrap: false}} />,
     },
 ];
 
@@ -31,7 +31,7 @@ const Widget = ({mode}) => {
     return (
         <Table
             scroll={{x: true}}
-            style={{maxWidth: 'min(500px, 100%)', margin: 20}}
+            style={{maxWidth: 'min(500px, 100%)'}}
             size="small"
             sticky
             pagination={{position: ['bottomLeft']}}
