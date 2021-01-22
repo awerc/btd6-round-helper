@@ -12,7 +12,7 @@ const {Option} = Select;
 
 const Widget = ({mode, setMode}) => {
     const [round, setRound] = useState('1');
-    const setRoundSafe = useCallback(value => Number(value) > 0 && setRound(value));
+    const setRoundSafe = useCallback(value => Number(value) > 0 && setRound(value), []);
     const toggleNextRound = useCallback(() => setRoundSafe(String(+round + 1)), [round]);
     const togglePrevRound = useCallback(() => setRoundSafe(String(+round - 1)), [round]);
 

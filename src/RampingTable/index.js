@@ -1,11 +1,6 @@
 import React from 'react';
 import {Table} from 'antd';
 
-import {getRound} from '../utils';
-
-import {ROUNDS_BY_MODE} from '../constants';
-import BloonsList from '../BloonsList';
-
 const COLUMNS = [
     {
         title: 'Round',
