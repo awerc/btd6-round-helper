@@ -69,6 +69,8 @@ const RoundsTable = () => {
                 }}
             >
                 <BloonWithChildren {...LAYERS['b.a.d']} />
+                <BloonWithChildren {...LAYERS['lead']} />
+                <BloonWithChildren {...LAYERS['purple']} />
             </Row>
             <Title level={3}>Special event bloons</Title>
             <Row gutter={12}>

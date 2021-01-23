@@ -71,8 +71,7 @@ export const LAYERS = {
         name: 'rainbow',
         rbe: 47,
         children: [
-            {name: 'black', count: 2},
-            {name: 'white', count: 2},
+            {name: 'zebra', count: 2},
         ],
         speed: 2.2,
     },

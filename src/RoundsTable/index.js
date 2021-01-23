@@ -1,32 +1,55 @@
-import React from 'react';
-import {Table} from 'antd';
+import React, {useState, useCallback} from 'react';
+import {Col, Row, Switch, Table, Tag} from 'antd';
 
 import {getRound} from '../utils';
-
-import {ROUNDS_BY_MODE} from '../constants';
+import {MODES, ROUNDS_BY_MODE} from '../constants';
 import BloonsList from '../BloonsList';
 
-const COLUMNS = [
-    {
-        title: '',
-        dataIndex: 'round',
-        key: 'round',
-        width: '70px',
-    },
-    {
-        title: 'Bloons',
-        dataIndex: 'bloons',
-        key: 'bloons',
-        render: ({rbe, money, bloons, danger}) => <BloonsList {...{bloons, danger, wrap: false}} />,
-    },
-];
+const {CheckableTag} = Tag;
 
-const RoundsTable = ({mode}) => {
+const RoundsTable = () => {
+    const [mode, setMode] = useState(MODES.normal);
+    const toggleMode = useCallback(() => setMode(mode === MODES.normal ? MODES.alternate : MODES.normal));
+
     const dataSource = new Array(100).fill(undefined).map((_, index) => ({
         key: index + 1,
         round: index + 1,
         bloons: getRound(ROUNDS_BY_MODE[mode])(String(index + 1)) || {},
     }));
+
+    const COLUMNS = [
+        {
+            title: '',
+            dataIndex: 'round',
+            key: 'round',
+            width: '70px',
+        },
+        {
+            title: (
+                <Row justify="space-between">
+                    Bloons
+                    <Row gutter={8}>
+                        <Col>
+                            <CheckableTag checked={mode === MODES.normal} onChange={() => setMode(MODES.normal)}>
+                                normal
+                            </CheckableTag>
+                        </Col>
+                        <Col>
+                            <Switch checked={mode === MODES.alternate} onChange={toggleMode} />
+                        </Col>
+                        <Col>
+                            <CheckableTag checked={mode === MODES.alternate} onChange={() => setMode(MODES.alternate)}>
+                                alternate
+                            </CheckableTag>
+                        </Col>
+                    </Row>
+                </Row>
+            ),
+            dataIndex: 'bloons',
+            key: 'bloons',
+            render: ({rbe, money, bloons, danger}) => <BloonsList {...{bloons, danger, wrap: false}} />,
+        },
+    ];
 
     return (
         <Table

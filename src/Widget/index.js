@@ -10,7 +10,8 @@ import {MODES, ROUNDS_BY_MODE} from '../constants';
 
 const {Option} = Select;
 
-const Widget = ({mode, setMode}) => {
+const Widget = () => {
+    const [mode, setMode] = useState(MODES.normal);
     const [round, setRound] = useState('1');
     const setRoundSafe = useCallback(value => Number(value) > 0 && setRound(value), [setRound]);
     const setRoundSemiSafe = useCallback(value => setRound(value.replace(/[^\d]/, '')), [setRound]);
