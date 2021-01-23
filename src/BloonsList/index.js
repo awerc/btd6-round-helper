@@ -3,7 +3,7 @@ import {Row, Col} from 'antd';
 
 import Bloon from '../Bloon';
 
-import DangerIcon from '../DangerIcon';
+import DangerIcon from '../Icons/DangerIcon';
 
 const BloonsList = ({bloons, danger, wrap = true}) => (
     <Row wrap={wrap} gutter={16} align="middle">

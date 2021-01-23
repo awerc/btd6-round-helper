@@ -5,7 +5,7 @@ import Bloon from '../Bloon';
 import {capitalize, prettifyNumber} from '../utils';
 import './style.scss';
 import {Col, Row, Typography} from 'antd';
-import SpeedIcon from '../SpeedIcon';
+import SpeedIcon from '../Icons/SpeedIcon';
 
 const {Title} = Typography;
 
@@ -48,6 +48,16 @@ const BloonWithChildren = data => (
         )}
     </div>
 );
+
+const SPECIAL_BLOONS = [
+    'golden',
+    'ghost',
+    'bloonarius the inflator',
+    'vortex: deadly master of air',
+    'dreadbloon: armored behemoth',
+    'blastapopoulos: demon of the core',
+];
+
 const RoundsTable = () => {
     return (
         <Col>
@@ -62,24 +72,11 @@ const RoundsTable = () => {
             </Row>
             <Title level={3}>Special event bloons</Title>
             <Row gutter={12}>
-                <Col>
-                    <BloonWithChildren {...LAYERS['golden']} />
-                </Col>
-                <Col>
-                    <BloonWithChildren {...LAYERS['ghost']} />
-                </Col>
-                <Col>
-                    <BloonWithChildren {...LAYERS['bloonarius the inflator']} />
-                </Col>
-                <Col>
-                    <BloonWithChildren {...LAYERS['vortex: deadly master of air']} />
-                </Col>
-                <Col>
-                    <BloonWithChildren {...LAYERS['dreadbloon: armored behemoth']} />
-                </Col>
-                <Col>
-                    <BloonWithChildren {...LAYERS['blastapopoulos: demon of the core']} />
-                </Col>
+                {SPECIAL_BLOONS.map(name => (
+                    <Col key={name}>
+                        <BloonWithChildren {...LAYERS[name]} />
+                    </Col>
+                ))}
             </Row>
         </Col>
     );

@@ -64,7 +64,7 @@ const Widget = ({mode, setMode}) => {
                             suffix={
                                 rbe && (
                                     <Tooltip placement="right" title={`RBE: ${prettifyNumber(rbe)}`}>
-                                        <QuestionCircleOutlined style={{color: '#555'}} />
+                                        <QuestionCircleOutlined />
                                     </Tooltip>
                                 )
                             }
