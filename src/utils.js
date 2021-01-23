@@ -6,3 +6,8 @@ export const getRound = rounds => round =>
 
         return Number(round) >= min && Number(round) <= max;
     });
+
+export const capitalize = str => str.replace(/\b\w/g, l => l.toUpperCase());
+
+export const prettifyNumber = num =>
+    (typeof num === 'string' ? num : num.toString()).replace(/\B(?=(\d{3})+(?!\d))/g, ',');

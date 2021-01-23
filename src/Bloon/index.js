@@ -3,11 +3,12 @@ import {Tooltip} from 'antd';
 
 import branch from '../branch';
 import './style.scss';
+import {capitalize} from '../utils';
 
-const Bloon = ({data}) => {
+const Bloon = ({data, tooltip}) => {
     const {name, count, mods} = data || {};
 
-    let type = name;
+    let type = name.replace(':', '');
     if (mods) type += `_${mods.join('_')}`;
 
     const [image, setImage] = useState(null);
@@ -20,7 +21,9 @@ const Bloon = ({data}) => {
             });
     }, [type]);
 
-    const tooltip = [name, ...(mods || [])].join(' ').replace(/\b\w/g, l => l.toUpperCase());
+    if (!tooltip) {
+        tooltip = capitalize([name, ...(mods || [])].join(' '));
+    }
 
     if (!image) {
         return null;

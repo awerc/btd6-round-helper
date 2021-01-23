@@ -4,7 +4,7 @@ import {PlusOutlined, MinusOutlined, QuestionCircleOutlined} from '@ant-design/i
 
 import Money from '../Money';
 import BloonsList from '../BloonsList';
-import {getRound} from '../utils';
+import {getRound, prettifyNumber} from '../utils';
 
 import {MODES, ROUNDS_BY_MODE} from '../constants';
 
@@ -12,9 +12,10 @@ const {Option} = Select;
 
 const Widget = ({mode, setMode}) => {
     const [round, setRound] = useState('1');
-    const setRoundSafe = useCallback(value => Number(value) > 0 && setRound(value), []);
-    const toggleNextRound = useCallback(() => setRoundSafe(String(+round + 1)), [round]);
-    const togglePrevRound = useCallback(() => setRoundSafe(String(+round - 1)), [round]);
+    const setRoundSafe = useCallback(value => Number(value) > 0 && setRound(value), [setRound]);
+    const setRoundSemiSafe = useCallback(value => setRound(value.replace(/[^\d]/, '')), [setRound]);
+    const toggleNextRound = useCallback(() => setRoundSafe(String(+round + 1)), [round, setRoundSafe]);
+    const togglePrevRound = useCallback(() => setRoundSafe(String(+round - 1)), [round, setRoundSafe]);
 
     const {rbe, money, bloons, danger} = useMemo(() => getRound(ROUNDS_BY_MODE[mode])(String(round)) || {}, [
         mode,
@@ -24,8 +25,6 @@ const Widget = ({mode, setMode}) => {
     return (
         <Card
             style={{
-                width: 'min(calc(100% - 40px), 500px)',
-                margin: 20,
                 boxShadow:
                     '0 1px 2px -2px rgba(0, 0, 0, 0.16), ' +
                     '0 3px 6px 0 rgba(0, 0, 0, 0.12), ' +
@@ -38,7 +37,7 @@ const Widget = ({mode, setMode}) => {
                         <Input
                             style={{minWidth: '150px'}}
                             value={round}
-                            onChange={e => setRoundSafe(e.target.value)}
+                            onChange={e => setRoundSemiSafe(e.target.value)}
                             addonAfter={
                                 <Select value={mode} onSelect={setMode}>
                                     <Option value={MODES.normal}>{MODES.normal}</Option>
@@ -64,7 +63,7 @@ const Widget = ({mode, setMode}) => {
                             value={round}
                             suffix={
                                 rbe && (
-                                    <Tooltip placement="right" title={`RBE: ${rbe}`}>
+                                    <Tooltip placement="right" title={`RBE: ${prettifyNumber(rbe)}`}>
                                         <QuestionCircleOutlined style={{color: '#555'}} />
                                     </Tooltip>
                                 )
@@ -78,13 +77,7 @@ const Widget = ({mode, setMode}) => {
                     )}
                 </Row>
 
-                <Statistic
-                    title="Bloons"
-                    value={
-                        <BloonsList {...{bloons, danger}} />
-                    }
-                    formatter={value => value}
-                />
+                <Statistic title="Bloons" value={<BloonsList {...{bloons, danger}} />} formatter={value => value} />
             </Col>
         </Card>
     );

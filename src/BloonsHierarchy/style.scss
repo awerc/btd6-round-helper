@@ -1,0 +1,14 @@
+.bloon-with-children {
+    display: flex;
+    align-items: center;
+
+    & + .bloon-with-children {
+        margin-top: 20px;
+    }
+}
+
+.children {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}

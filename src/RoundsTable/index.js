@@ -21,7 +21,7 @@ const COLUMNS = [
     },
 ];
 
-const Widget = ({mode}) => {
+const RoundsTable = ({mode}) => {
     const dataSource = new Array(100).fill(undefined).map((_, index) => ({
         key: index + 1,
         round: index + 1,
@@ -31,7 +31,6 @@ const Widget = ({mode}) => {
     return (
         <Table
             scroll={{x: true}}
-            style={{maxWidth: 'min(500px, 100%)'}}
             size="small"
             sticky
             pagination={{position: ['bottomLeft']}}
@@ -41,4 +40,4 @@ const Widget = ({mode}) => {
     );
 };
 
-export default Widget;
+export default RoundsTable;

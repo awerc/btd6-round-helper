@@ -49,7 +49,6 @@ const DATA_SOURCE = [
 const RampingTable = () => {
     return (
         <Table
-            style={{maxWidth: 'min(500px, 100%)'}}
             size="small"
             pagination={false}
             columns={COLUMNS}
