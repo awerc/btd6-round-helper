@@ -8,7 +8,7 @@ import {capitalize} from '../utils';
 const Bloon = ({data, tooltip}) => {
     const {name, count, mods} = data || {};
 
-    let type = name.replace(':', '');
+    let type = name.replace(':', '').replace(/[ .]/g, '_');
     if (mods) type += `_${mods.join('_')}`;
 
     const [image, setImage] = useState(null);

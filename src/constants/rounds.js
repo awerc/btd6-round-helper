@@ -833,6 +833,7 @@ export const ROUNDS = [
     },
     {
         round: '40',
+        danger: true,
         rbe: 616,
         money: {
             pop: 381,
