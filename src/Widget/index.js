@@ -84,7 +84,7 @@ const Widget = () => {
                         />
                     </Col>
                 </Row>
-                <NextDangerRound currentRound={round} mode={mode} />
+                <NextDangerRound currentRound={round} mode={mode} setRound={setRound} />
             </Col>
         </Card>
     );

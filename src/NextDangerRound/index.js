@@ -1,11 +1,11 @@
 import React, {useMemo, useState, useCallback} from 'react';
-import {Button, Col, Row, Tooltip} from 'antd';
+import {Button, Row, Tooltip} from 'antd';
 import {QuestionCircleOutlined} from '@ant-design/icons';
 
 import {ROUNDS_BY_MODE} from '../constants';
 import BloonsList from '../BloonsList';
 
-const NextDangerRound = ({currentRound, mode}) => {
+const NextDangerRound = ({currentRound, mode, setRound}) => {
     const [expanded, toggleExpanded] = useState(false);
     const toggle = useCallback(() => toggleExpanded(!expanded), [expanded, toggleExpanded]);
 
@@ -22,15 +22,18 @@ const NextDangerRound = ({currentRound, mode}) => {
 
     if (!nextDanger) return null;
 
+    const {round, danger} = nextDanger;
+
     return (
         <>
-            <Row gutter={8} align="middle" style={{fontSize: '16px'}}>
-                <Col>Next danger round: {nextDanger.round}</Col>
-                <Col>
-                    <Tooltip placement="right" title={nextDanger.danger}>
-                        <QuestionCircleOutlined />
-                    </Tooltip>
-                </Col>
+            <Row align="middle" style={{fontSize: '16px'}}>
+                Next danger round:{' '}
+                <Button size="large" type="link" onClick={() => setRound(round)}>
+                    {round}
+                </Button>
+                <Tooltip placement="right" title={danger}>
+                    <QuestionCircleOutlined />
+                </Tooltip>
                 <Button size="large" type="link" onClick={toggle}>
                     {expanded ? 'hide' : 'show'}
                 </Button>
