@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Collapse, Col, Row} from 'antd';
 import {ThemeSwitcherProvider} from 'react-css-theme-switcher';
 
-import {MODES, THEMES} from './constants';
+import {THEMES} from './constants';
 import useLocalStorage from './useLocalStorage';
 
 import Widget from './Widget';

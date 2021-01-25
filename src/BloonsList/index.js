@@ -1,15 +1,16 @@
 import React from 'react';
-import {Row, Col} from 'antd';
+import {Row, Col, Tooltip} from 'antd';
 
 import Bloon from '../Bloon';
-
 import DangerIcon from '../Icons/DangerIcon';
 
 const BloonsList = ({bloons, danger, wrap = true}) => (
     <Row wrap={wrap} gutter={16} align="middle">
         {danger && (
             <Col style={{display: 'flex'}}>
-                <DangerIcon style={{fontSize: '35px'}} />
+                <Tooltip placement="right" title={danger}>
+                    <DangerIcon style={{fontSize: '35px'}} />
+                </Tooltip>
             </Col>
         )}
         {bloons?.map(bloon => (

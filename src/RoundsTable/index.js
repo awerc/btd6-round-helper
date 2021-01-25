@@ -9,7 +9,10 @@ const {CheckableTag} = Tag;
 
 const RoundsTable = () => {
     const [mode, setMode] = useState(MODES.normal);
-    const toggleMode = useCallback(() => setMode(mode === MODES.normal ? MODES.alternate : MODES.normal));
+    const toggleMode = useCallback(() => setMode(mode === MODES.normal ? MODES.alternate : MODES.normal), [
+        mode,
+        setMode,
+    ]);
 
     const dataSource = new Array(100).fill(undefined).map((_, index) => ({
         key: index + 1,
@@ -64,14 +67,3 @@ const RoundsTable = () => {
 };
 
 export default RoundsTable;
-
-
-// for f in *\.[0-9a-zA-Z]*\.png; do mv "$f" $(echo "$f" | sed 's/\.[0-9a-zA-Z]*\.png/.png/g'); done
-// find . -type f -name '*' -exec sed -i '' 's/\.[0-9a-zA-Z]*\.png/.png/g' {} \;
-
-
-
-/*
-cd static/media && for f in *\.[0-9a-zA-Z]*\.png; do mv "$f" $(echo "$f" | sed 's/\.[0-9a-zA-Z]*\.png/.png/g'); done && cd ../.. && \
-find . -type f -name '*.js' -exec sed -i '' 's/\.[0-9a-zA-Z][0-9a-zA-Z]*\.png/.png/g' {} \;
-*/

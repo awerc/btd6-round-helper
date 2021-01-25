@@ -6,7 +6,8 @@ import Money from '../Money';
 import BloonsList from '../BloonsList';
 import {getRound, prettifyNumber} from '../utils';
 
-import {MODES, ROUNDS_BY_MODE} from '../constants';
+import {MODES} from '../constants';
+import NextDangerRound from '../NextDangerRound';
 
 const {Option} = Select;
 
@@ -18,10 +19,7 @@ const Widget = () => {
     const toggleNextRound = useCallback(() => setRoundSafe(String(+round + 1)), [round, setRoundSafe]);
     const togglePrevRound = useCallback(() => setRoundSafe(String(+round - 1)), [round, setRoundSafe]);
 
-    const {rbe, money, bloons, danger} = useMemo(() => getRound(ROUNDS_BY_MODE[mode])(String(round)) || {}, [
-        mode,
-        round,
-    ]);
+    const {rbe, money, bloons, danger} = useMemo(() => getRound({round, mode}) || {}, [mode, round]);
 
     return (
         <Card
@@ -77,8 +75,16 @@ const Widget = () => {
                         </Col>
                     )}
                 </Row>
-
-                <Statistic title="Bloons" value={<BloonsList {...{bloons, danger}} />} formatter={value => value} />
+                <Row gutter={[16, 16]}>
+                    <Col span={24}>
+                        <Statistic
+                            title="Bloons"
+                            value={<BloonsList {...{bloons, danger}} />}
+                            formatter={value => value}
+                        />
+                    </Col>
+                </Row>
+                <NextDangerRound currentRound={round} mode={mode} />
             </Col>
         </Card>
     );

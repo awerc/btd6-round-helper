@@ -3,6 +3,7 @@ export const ALTERNATE_ROUNDS = [
     {round: '2', rbe: 55, money: {pop: 55, total: 157, cumulative: 278}, bloons: [{name: 'red', count: 55}]},
     {
         round: '3',
+        danger: 'First Regrowth bloons',
         rbe: 37,
         money: {pop: 37, total: 140, cumulative: 396},
         bloons: [
@@ -22,6 +23,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '5',
+        danger: 'First Camo bloons. 12 Red Camo',
         rbe: 52,
         money: {pop: 52, total: 157, cumulative: 758},
         bloons: [
@@ -70,6 +72,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '10',
+        danger: 'Lead bloons',
         rbe: 210,
         money: {pop: 210, total: 320, cumulative: 1832},
         bloons: [
@@ -192,6 +195,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '24',
+        danger: 'Camo Lead',
         rbe: 23,
         money: {pop: 23, total: 147, cumulative: 5417},
         bloons: [{name: 'lead', count: 1, mods: ['camo']}],
@@ -260,6 +264,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '32',
+        danger: 'First Ceramic bloons',
         rbe: 563,
         money: {pop: 563, total: 695, cumulative: 9249},
         bloons: [
@@ -344,6 +349,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '40',
+        danger: 'Fortified MOAB',
         rbe: 856,
         money: {pop: 381, total: 521, cumulative: 17462},
         bloons: [{name: 'm.o.a.b', count: 1, mods: ['fortified']}],
@@ -359,6 +365,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '42',
+        danger: 'Many Camo Regrow Rainbows',
         rbe: 517,
         money: {pop: 517, total: 659, cumulative: 20592},
         bloons: [{name: 'rainbow', count: 11, mods: ['camo', 'regrowth']}],
@@ -432,6 +439,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '50',
+        danger: 'Lots of MOABs, some Fortified',
         rbe: 6464,
         money: {pop: 2185, total: 2335, cumulative: 35592},
         bloons: [
@@ -443,6 +451,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '51',
+        danger: 'Fortified Ceramic Camo bloons incoming',
         rbe: 3422,
         money: {pop: 1445, total: 1596, cumulative: 37188},
         bloons: [
@@ -471,6 +480,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '54',
+        danger: 'First BFB',
         rbe: 4165,
         bloons: [
             {name: 'black', count: 35, mods: ['regrowth']},
@@ -523,7 +533,7 @@ export const ALTERNATE_ROUNDS = [
             {name: 'rainbow', count: 25},
         ],
     },
-    {round: '60', rbe: 4824, bloons: [{name: 'b.f.b', count: 1, mods: ['fortified']}]},
+    {round: '60', danger: 'Fortified BFB', rbe: 4824, bloons: [{name: 'b.f.b', count: 1, mods: ['fortified']}]},
     {
         round: '61',
         rbe: 10759,
@@ -545,6 +555,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '63',
+        danger: 'Large Ceramic/MOAB rush',
         rbe: 14820,
         bloons: [
             {name: 'ceramic', count: 40},
@@ -608,6 +619,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '70',
+        danger: '6 Fortified BFBs',
         rbe: 14536,
         bloons: [
             {name: 'm.o.a.b', count: 200},
@@ -681,6 +693,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '79',
+        danger: 'First ZOMG',
         rbe: 59452,
         bloons: [
             {name: 'rainbow', count: 500, mods: ['camo']},
@@ -688,7 +701,7 @@ export const ALTERNATE_ROUNDS = [
             {name: 'z.o.m.g', count: 1},
         ],
     },
-    {round: '80', rbe: 33312, bloons: [{name: 'z.o.m.g', count: 2}]},
+    {round: '80', danger: '2 ZOMGs', rbe: 33312, bloons: [{name: 'z.o.m.g', count: 2}]},
     {
         round: '81',
         rbe: 64580,
@@ -726,9 +739,10 @@ export const ALTERNATE_ROUNDS = [
     },
     {round: '85', rbe: 49968, bloons: [{name: 'z.o.m.g', count: 3}]},
     {round: '86', rbe: 38592, bloons: [{name: 'b.f.b', count: 8, mods: ['fortified']}]},
-    {round: '87', rbe: 83280, bloons: [{name: 'z.o.m.g', count: 5}]},
+    {round: '87', danger: '6 ZOMGs', rbe: 83280, bloons: [{name: 'z.o.m.g', count: 5}]},
     {
         round: '88',
+        danger: 'First DDTs',
         rbe: 53256,
         bloons: [
             {name: 'm.o.a.b', count: 15, mods: ['fortified']},
@@ -746,6 +760,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '90',
+        danger: 'Regen Ceramic Rush and DDTs',
         rbe: 8964,
         bloons: [
             {name: 'fortified', count: 50, mods: ['ceramic', 'camo', 'regrowth']},
@@ -787,6 +802,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '95',
+        danger: 'Huge DDT rush',
         rbe: 72780,
         bloons: [
             {name: 'purple', count: 500, mods: ['camo', 'regrowth']},
@@ -806,6 +822,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '97',
+        danger: 'Fortified ZOMGs',
         rbe: 64640,
         bloons: [
             {name: 'd.d.t', count: 8, mods: ['fortified']},
@@ -814,6 +831,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '98',
+        danger: 'ZOMGs and Fortified BFBs',
         rbe: 279696,
         bloons: [
             {name: 'b.f.b', count: 20, mods: ['fortified']},
@@ -822,6 +840,7 @@ export const ALTERNATE_ROUNDS = [
     },
     {
         round: '99',
+        danger: 'BAD',
         rbe: 85544,
         bloons: [
             {name: 'm.o.a.b', count: 30},
@@ -829,5 +848,5 @@ export const ALTERNATE_ROUNDS = [
             {name: 'b.a.d', count: 1},
         ],
     },
-    {round: '100', rbe: 98360, bloons: [{name: 'b.a.d', count: 1, mods: ['fortified']}]},
+    {round: '100', danger: 'Fortified BAD', rbe: 98360, bloons: [{name: 'b.a.d', count: 1, mods: ['fortified']}]},
 ];

@@ -770,6 +770,7 @@ export const ROUNDS = [
     },
     {
         round: '38',
+        danger: 'Starts of Ceramics',
         rbe: 1157,
         money: {
             pop: 1139,
@@ -833,7 +834,7 @@ export const ROUNDS = [
     },
     {
         round: '40',
-        danger: true,
+        danger: 'First MOAB',
         rbe: 616,
         money: {
             pop: 381,
@@ -868,6 +869,7 @@ export const ROUNDS = [
     },
     {
         round: '42',
+        danger: 'Fifth Camo round. Camo Rainbows along with their Regen counterparts',
         rbe: 517,
         money: {
             pop: 517,
@@ -1078,6 +1080,7 @@ export const ROUNDS = [
     },
     {
         round: '51',
+        danger: 'First Camo Ceramic round, and eighth Camo round overall. Many spaced Camo Ceramics',
         rbe: 2030,
         money: {
             pop: 947,
@@ -1243,6 +1246,7 @@ export const ROUNDS = [
     },
     {
         round: '59',
+        danger: 'Camo Leads and Regrowth Ceramics',
         rbe: 4270,
         money: {
             pop: 2000,
@@ -1303,6 +1307,7 @@ export const ROUNDS = [
     },
     {
         round: '62',
+        danger: 'Many Camo Regrowth Rainbows and two Fortified MOABs',
         rbe: 8247,
         money: {
             pop: 1225,
@@ -1332,7 +1337,7 @@ export const ROUNDS = [
     },
     {
         round: '63',
-        danger: true,
+        danger: 'Massive Ceramic rushes, some with 0 spacing',
         rbe: 14413,
         money: {
             pop: 2663,
@@ -1423,6 +1428,7 @@ export const ROUNDS = [
     },
     {
         round: '67',
+        danger: 'Lots of Camo Regrowth Fortified Ceramics and many MOABs',
         rbe: 6410,
         money: {
             pop: 857,
@@ -1662,6 +1668,7 @@ export const ROUNDS = [
     },
     {
         round: '78',
+        dannger: 'Grouped Camo Ceramics',
         rbe: 26382,
         money: {
             pop: 4684,
@@ -1719,6 +1726,7 @@ export const ROUNDS = [
     },
     {
         round: '80',
+        danger: 'Single ZOMG',
         rbe: 16656,
         money: {
             pop: 1220,
@@ -1817,6 +1825,7 @@ export const ROUNDS = [
     },
     {
         round: '85',
+        danger: '2 ZOMGs',
         rbe: 30731,
         money: {
             pop: 2441,
@@ -1907,6 +1916,7 @@ export const ROUNDS = [
     },
     {
         round: '90',
+        dange: 'Starts of DDTs. Also an Alchemist Farm round',
         rbe: 2756,
         money: {
             pop: 150,
@@ -2006,6 +2016,7 @@ export const ROUNDS = [
     },
     {
         round: '95',
+        danger: 'Massive DDT rush',
         rbe: 80860,
         money: {
             pop: 3523,
@@ -2116,6 +2127,7 @@ export const ROUNDS = [
     },
     {
         round: '100',
+        danger: 'One BAD bloon',
         rbe: 67200,
         money: {
             pop: 1335,
@@ -2286,6 +2298,7 @@ export const ROUNDS = [
     },
     {
         round: '200',
+        danger: 'Two Fortified BADs',
         rbe: 196720,
         money: {
             pop: 533,
@@ -2334,7 +2347,7 @@ export const ROUNDS = [
             {
                 name: 'm.o.a.b',
                 count: '?',
-                mods: ['fortified']
+                mods: ['fortified'],
             },
             {
                 name: 'd.d.t',
@@ -2343,7 +2356,7 @@ export const ROUNDS = [
             {
                 name: 'd.d.t',
                 count: '?',
-                mods: ['fortified']
+                mods: ['fortified'],
             },
         ],
     },
