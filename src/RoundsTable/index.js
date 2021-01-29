@@ -17,7 +17,7 @@ const RoundsTable = () => {
     const dataSource = new Array(100).fill(undefined).map((_, index) => ({
         key: index + 1,
         round: index + 1,
-        bloons: getRound(ROUNDS_BY_MODE[mode])(String(index + 1)) || {},
+        bloons: getRound({round: index + 1, mode}) || {},
     }));
 
     const COLUMNS = [
