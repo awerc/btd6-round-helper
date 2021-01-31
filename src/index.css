@@ -25,7 +25,8 @@ code {
 
 .app {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 480px 480px;
+    grid-template-rows: auto auto;
     align-items: flex-start;
     grid-gap: 20px;
     margin: 20px auto;
@@ -33,9 +34,17 @@ code {
     max-width: 1020px;
 }
 
+.keyboard-shortcuts {
+    grid-column: 1 / 3;
+}
+
 @media (max-width: 1000px) {
     .app {
-        grid-template-columns: min(500px, 100%);
-        max-width: 500px;
+        grid-template-columns: min(480px, 100%);
+        max-width: 480px;
+    }
+
+    .keyboard-shortcuts {
+        grid-column: 1;
     }
 }

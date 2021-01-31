@@ -10,6 +10,7 @@ import RoundsTable from './RoundsTable';
 import RampingTable from './RampingTable';
 import BloonsHierarchy from './BloonsHierarchy';
 import ThemeSwitcher from './ThemeSwitcher';
+import Keyboard from './Keyboard';
 
 const {Panel} = Collapse;
 
@@ -39,8 +40,13 @@ const App = () => {
                             </div>
                         </Panel>
                     </Collapse>
+                    <Collapse defaultActiveKey="0" className="keyboard-shortcuts">
+                        <Panel header="Keyboard shortcuts" key="1">
+                            <Keyboard />
+                        </Panel>
+                    </Collapse>
                 </div>
-            </Col>{' '}
+            </Col>
         </ThemeSwitcherProvider>
     );
 };

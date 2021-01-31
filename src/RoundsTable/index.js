@@ -2,7 +2,7 @@ import React, {useState, useCallback} from 'react';
 import {Col, Row, Switch, Table, Tag} from 'antd';
 
 import {getRound} from '../utils';
-import {MODES, ROUNDS_BY_MODE} from '../constants';
+import {MODES} from '../constants';
 import BloonsList from '../BloonsList';
 
 const {CheckableTag} = Tag;
