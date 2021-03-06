@@ -11,7 +11,8 @@ clientsClaim();
 precacheAndRoute(self.__WB_MANIFEST);
 
 registerRoute(
-    new StaleWhileRevalidate({
+  ({url}) => url.origin === self.location.origin && url.pathname.endsWith('.png'), // Customize this strategy as needed, e.g., by changing to CacheFirst.
+  new StaleWhileRevalidate({
         cacheName: 'images',
         plugins: [new ExpirationPlugin({maxEntries: 50})],
     }),
