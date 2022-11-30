@@ -3,17 +3,17 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@testing-library/jest-dom": "^5.11.4",
-        "@testing-library/react": "^11.1.0",
-        "@testing-library/user-event": "^12.1.10",
-        "antd": "^4.10.3",
-        "classnames": "^2.2.6",
-        "node-sass": "4.14.1",
-        "react": "^17.0.1",
-        "react-css-theme-switcher": "^0.2.2",
-        "react-dom": "^17.0.1",
-        "react-scripts": "4.0.1",
-        "web-vitals": "^0.2.4"
+        "@testing-library/jest-dom": "5.11.4",
+        "@testing-library/react": "11.1.0",
+        "@testing-library/user-event": "12.1.10",
+        "antd": "4.10.3",
+        "classnames": "2.2.6",
+        "node-sass": "8.0.0",
+        "react": "17.0.1",
+        "react-css-theme-switcher": "0.2.2",
+        "react-dom": "17.0.1",
+        "react-scripts": "5.0.1",
+        "web-vitals": "0.2.4"
     },
     "scripts": {
         "rename-images": "cd build/static/media && for f in *\\.[0-9a-zA-Z]*\\.png; do mv \"$f\" $(echo \"$f\" | sed 's/\\.[0-9a-zA-Z]*\\.png/.png/g'); done && cd ../../..",
