@@ -3,9 +3,9 @@ import {Tooltip} from 'antd';
 
 import branch from '../branch';
 import './style.scss';
-import {capitalize} from '../utils';
+import {getTooltip} from '../utils';
 
-const Bloon = ({data, tooltip}) => {
+const Bloon = ({data}) => {
     const {name, count, mods} = data || {};
 
     let type = name.replace(':', '').replace(/[ .]/g, '_');
@@ -21,16 +21,12 @@ const Bloon = ({data, tooltip}) => {
             });
     }, [type]);
 
-    if (!tooltip) {
-        tooltip = capitalize([name, ...(mods || [])].join(' '));
-    }
-
     if (!image) {
         return null;
     }
 
     return (
-        <Tooltip placement="right" title={tooltip}>
+        <Tooltip placement="right" title={getTooltip(data)}>
             <div className="bloon">
                 <img className="icon" src={image} alt={name} />
                 {count && <span className="fancy-text count">{count}</span>}

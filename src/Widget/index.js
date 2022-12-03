@@ -75,6 +75,7 @@ const Widget = () => {
                         </Col>
                     )}
                 </Row>
+                {console.log('widget', bloons)}
                 <Row gutter={[16, 16]}>
                     <Col span={24}>
                         <Statistic

@@ -19,6 +19,7 @@ const RoundsTable = () => {
         round: index + 1,
         bloons: getRound({round: index + 1, mode}) || {},
     }));
+    console.log('table', dataSource)
 
     const COLUMNS = [
         {
