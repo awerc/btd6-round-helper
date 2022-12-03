@@ -1,27 +1,20 @@
 import React, {useCallback} from 'react';
 import {Switch, Row, Col} from 'antd';
-import {useThemeSwitcher} from 'react-css-theme-switcher';
 
 import ThemeIcon from '../Icons/ThemeIcon';
-import useLocalStorage from '../useLocalStorage';
 
-const ThemeSwitcher = () => {
-    const [isDarkMode, setIsDarkMode] = useLocalStorage('darkMode', false);
-    const {switcher, themes} = useThemeSwitcher();
-
+const ThemeSwitcher = ({isDarkMode, setIsDarkMode}) => {
     const switchTheme = useCallback(
         isChecked => {
             setIsDarkMode(isChecked);
-            switcher({theme: isChecked ? themes.dark : themes.light});
         },
-        [setIsDarkMode, switcher, themes],
+        [setIsDarkMode],
     );
 
     const toggleTheme = useCallback(() => {
         const isChecked = !isDarkMode;
         setIsDarkMode(isChecked);
-        switcher({theme: isChecked ? themes.dark : themes.light});
-    }, [isDarkMode, setIsDarkMode, switcher, themes]);
+    }, [isDarkMode, setIsDarkMode]);
 
     return (
         <Row gutter={8} align="middle">
