@@ -96,10 +96,10 @@ const Keyboard = () => (
         justify="center"
     >
         <Col>
-            {KEYS.map(row => (
-                <Row wrap={false} gutter={[8, 8]} className="row">
-                    {row.map(key => (
-                        <Col>
+            {KEYS.map((row, i) => (
+                <Row key={i} wrap={false} gutter={[8, 8]} className="row">
+                    {row.map((key, j) => (
+                        <Col key={j}>
                             <Key {...key} />
                         </Col>
                     ))}

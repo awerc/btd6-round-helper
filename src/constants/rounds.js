@@ -823,7 +823,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'yellow',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 12,
                 start: 0,
                 end: 5,
@@ -911,7 +911,7 @@ export const ROUNDS = [
             },
             {
                 name: 'yellow',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 5,
                 start: 2.85,
                 end: 5.19,
@@ -1153,7 +1153,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'yellow',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 25,
                 start: 0,
                 end: 14,
@@ -1335,7 +1335,7 @@ export const ROUNDS = [
             },
             {
                 name: 'yellow',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 15,
                 start: 12.75,
                 end: 15.25,
@@ -1429,7 +1429,7 @@ export const ROUNDS = [
             },
             {
                 name: 'zebra',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 2,
                 start: 14.2,
                 end: 15.91,
@@ -1674,7 +1674,7 @@ export const ROUNDS = [
             },
             {
                 name: 'green',
-                mods: ['regrow', 'camo'],
+                mods: ['regrowth', 'camo'],
                 count: 10,
                 start: 4.01,
                 end: 5.36,
@@ -1687,7 +1687,7 @@ export const ROUNDS = [
             },
             {
                 name: 'green',
-                mods: ['regrow', 'camo'],
+                mods: ['regrowth', 'camo'],
                 count: 10,
                 start: 12.67,
                 end: 14.02,
@@ -1911,7 +1911,7 @@ export const ROUNDS = [
             },
             {
                 name: 'rainbow',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 2,
                 start: 35.93,
                 end: 37.93,
@@ -2023,7 +2023,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'rainbow',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 6,
                 start: 0,
                 end: 5,
@@ -2314,14 +2314,14 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'pink',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 40,
                 start: 0,
                 end: 15,
             },
             {
                 name: 'purple',
-                mods: ['regrow', 'camo'],
+                mods: ['regrowth', 'camo'],
                 count: 30,
                 start: 15.29,
                 end: 30.29,
@@ -2413,7 +2413,7 @@ export const ROUNDS = [
             },
             {
                 name: 'rainbow',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 10,
                 start: 41.38,
                 end: 46.52,
@@ -2528,7 +2528,7 @@ export const ROUNDS = [
             },
             {
                 name: 'rainbow',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 10,
                 start: 19,
                 end: 24.14,
@@ -2951,7 +2951,7 @@ export const ROUNDS = [
             },
             {
                 name: 'ceramic',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 10,
                 start: 18.16,
                 end: 26.16,
@@ -3019,7 +3019,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'zebra',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 150,
                 start: 0,
                 end: 20,
@@ -3091,7 +3091,7 @@ export const ROUNDS = [
             },
             {
                 name: 'rainbow',
-                mods: ['regrow', 'camo'],
+                mods: ['regrowth', 'camo'],
                 count: 15,
                 start: 40.3,
                 end: 48.29,
@@ -3358,7 +3358,7 @@ export const ROUNDS = [
             },
             {
                 name: 'ceramic',
-                mods: ['regrow', 'camo', 'fortified'],
+                mods: ['regrowth', 'camo', 'fortified'],
                 count: 13,
                 start: 9.1,
                 end: 17.09,
@@ -3454,7 +3454,7 @@ export const ROUNDS = [
             },
             {
                 name: 'black',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 40,
                 start: 5.46,
                 end: 15.46,
@@ -3501,7 +3501,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'white',
-                mods: ['regrow', 'camo'],
+                mods: ['regrowth', 'camo'],
                 count: 120,
                 start: 0,
                 end: 38,
@@ -3591,7 +3591,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'ceramic',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 38,
                 start: 0,
                 end: 21.7,
@@ -3702,7 +3702,7 @@ export const ROUNDS = [
             },
             {
                 name: 'ceramic',
-                mods: ['regrow', 'camo', 'fortified'],
+                mods: ['regrowth', 'camo', 'fortified'],
                 count: 25,
                 start: 21.14,
                 end: 41.14,
@@ -3832,7 +3832,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'ceramic',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 60,
                 start: 0,
                 end: 1.78,
@@ -3989,7 +3989,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'rainbow',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 500,
                 start: 0,
                 end: 60,
@@ -4166,7 +4166,7 @@ export const ROUNDS = [
             },
             {
                 name: 'ceramic',
-                mods: ['regrow'],
+                mods: ['regrowth'],
                 count: 40,
                 start: 0.1,
                 end: 60.1,
@@ -4450,7 +4450,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'lead',
-                mods: ['regrow', 'camo', 'fortified'],
+                mods: ['regrowth', 'camo', 'fortified'],
                 count: 50,
                 start: 0,
                 end: 10,
@@ -4676,14 +4676,14 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'purple',
-                mods: ['regrow', 'camo'],
+                mods: ['regrowth', 'camo'],
                 count: 500,
                 start: 0,
                 end: 30,
             },
             {
                 name: 'lead',
-                mods: ['regrow', 'camo', 'fortified'],
+                mods: ['regrowth', 'camo', 'fortified'],
                 count: 250,
                 start: 0,
                 end: 30,
@@ -6639,7 +6639,7 @@ export const ROUNDS = [
         round: '126',
         bloons: [
             {
-                name: 'regrow',
+                name: 'regrowth',
                 count: 1,
                 mods: ['camo'],
             },
@@ -6670,7 +6670,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'lead',
-                mods: ['regrow', 'camo', 'fortified'],
+                mods: ['regrowth', 'camo', 'fortified'],
                 count: 1,
                 start: 0.5,
                 end: 0.5,
