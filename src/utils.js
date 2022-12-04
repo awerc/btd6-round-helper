@@ -25,7 +25,7 @@ export const getTooltip = ({name, mods = []}) => {
                     {speed}
                 </div>
             )}
-            {notes.length > 0 && notes.map(note => <div>• {note}</div>)}
+            {notes.length > 0 && notes.map(note => <div key={note}>• {note}</div>)}
         </div>
     );
 };

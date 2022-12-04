@@ -9,17 +9,16 @@ const {CheckableTag} = Tag;
 
 const RoundsTable = () => {
     const [mode, setMode] = useState(MODES.normal);
-    const toggleMode = useCallback(() => setMode(mode === MODES.normal ? MODES.alternate : MODES.normal), [
-        mode,
-        setMode,
-    ]);
+    const toggleMode = useCallback(
+        () => setMode(mode === MODES.normal ? MODES.alternate : MODES.normal),
+        [mode, setMode],
+    );
 
-    const dataSource = new Array(100).fill(undefined).map((_, index) => ({
+    const dataSource = new Array(140).fill(undefined).map((_, index) => ({
         key: index + 1,
         round: index + 1,
         bloons: getRound({round: index + 1, mode}) || {},
     }));
-    console.log('table', dataSource)
 
     const COLUMNS = [
         {

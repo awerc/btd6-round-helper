@@ -3,7 +3,6 @@ var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlug
 
 const webpackConfigProd = require('react-scripts/config/webpack.config.js');
 
-console.log('---------webpackConfigProd', webpackConfigProd)
 webpackConfigProd.plugins.push(
     new BundleAnalyzerPlugin({
         analyzerMode: 'static',

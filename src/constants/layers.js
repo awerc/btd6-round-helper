@@ -3,36 +3,53 @@ export const TYPE = {
     boss: 'boss',
 };
 
+export const MODS_STYLES = {
+    fortified: {
+        borderWidth: 3,
+    },
+    camo: {
+        opacity: 0.7,
+    },
+    regrowth: {
+        borderRadius: '15px 5px',
+    },
+};
+
 export const LAYERS = {
     red: {
         name: 'red',
         rbe: 1,
         children: [],
         speed: 1,
+        style: {background: '#ed1212'},
     },
     blue: {
         name: 'blue',
         rbe: 2,
         children: [{name: 'red', count: 1}],
         speed: 1.4,
+        style: {background: '#1b90de'},
     },
     green: {
         name: 'green',
         rbe: 3,
         children: [{name: 'blue', count: 1}],
         speed: 1.8,
+        style: {background: '#70a302'},
     },
     yellow: {
         name: 'yellow',
         rbe: 4,
         children: [{name: 'green', count: 1}],
         speed: 3.2,
+        style: {background: '#ffd203'},
     },
     pink: {
         name: 'pink',
         rbe: 5,
         children: [{name: 'yellow', count: 1}],
         speed: 3.5,
+        style: {background: '#f04557'},
     },
     black: {
         name: 'black',
@@ -40,6 +57,7 @@ export const LAYERS = {
         children: [{name: 'pink', count: 2}],
         speed: 1.8,
         notes: ['Immune to explosions'],
+        style: {background: '#525252'},
     },
     white: {
         name: 'white',
@@ -47,6 +65,7 @@ export const LAYERS = {
         children: [{name: 'pink', count: 2}],
         speed: 2,
         notes: ['Immune to being frozen'],
+        style: {background: '#d1d1d1'},
     },
     purple: {
         name: 'purple',
@@ -54,6 +73,7 @@ export const LAYERS = {
         children: [{name: 'pink', count: 2}],
         speed: 3,
         notes: ['Immune to all energy, fire and plasma attacks'],
+        style: {background: '#8e1cde', borderStyle: 'solid', borderColor: '#2db8f8'},
     },
     lead: {
         name: 'lead',
@@ -61,6 +81,7 @@ export const LAYERS = {
         children: [{name: 'black', count: 2}],
         speed: 3,
         notes: ['Immune to any sharp stuff', 'Too heavy to be picked up by Tempest Tornadoes or Whirlwinds'],
+        style: {background: '#838383', borderStyle: 'solid', borderColor: '#5a5a5a'},
     },
     zebra: {
         name: 'zebra',
@@ -71,12 +92,21 @@ export const LAYERS = {
         ],
         speed: 1.8,
         notes: ['Immune to explosions and freezing'],
+        style: {
+            background: `repeating-linear-gradient(135deg,
+                rgb(90, 90, 90) 0px, rgb(90, 90, 90) 0.8em,
+                rgb(209, 209, 209) 0.8em, rgb(209, 209, 209) 1em,
+                rgb(209, 209, 209) 1em, rgb(209, 209, 209) 1.8em,
+                rgb(90, 90, 90) 1.8em, rgb(90, 90, 90) 2em)
+            `,
+        },
     },
     rainbow: {
         name: 'rainbow',
         rbe: 47,
         children: [{name: 'zebra', count: 2}],
         speed: 2.2,
+        style: {background: 'linear-gradient(to bottom, #ed1212, #ffd203, #70a302, #1b90de, #f04557)'},
     },
     ceramic: {
         name: 'ceramic',
@@ -84,6 +114,7 @@ export const LAYERS = {
         children: [{name: 'rainbow', count: 2}],
         speed: 2.5,
         notes: ['Takes 10 hits to break it open (38 in freeplay)', "It won't be slowed down by Glue Gunners"],
+        style: {background: '#c47a32', borderStyle: 'solid', borderColor: '#93510b'},
     },
     golden: {
         name: 'golden',
@@ -115,6 +146,7 @@ export const LAYERS = {
         children: [{name: 'ceramic', count: 4}],
         speed: 1,
         notes: ['Massive Ornary Air Blimp', 'Immune to freezing and cannot be glued'],
+        style: {background: '#00c5fa', borderStyle: 'solid', borderColor: '#dbffff'},
     },
     'b.f.b': {
         name: 'b.f.b',
@@ -122,6 +154,7 @@ export const LAYERS = {
         children: [{name: 'm.o.a.b', count: 4}],
         speed: 0.25,
         notes: ['Brutal Floating Behemoth'],
+        style: {background: '#ce0606', borderStyle: 'solid', borderColor: '#fddcdc'},
     },
     'z.o.m.g': {
         name: 'z.o.m.g',
@@ -132,6 +165,7 @@ export const LAYERS = {
             'Zeppelin Of Mighty Gargantuaness',
             'Immune to many abilities, such as Monkey Pirates, Glue Striker, Absolute Zero',
         ],
+        style: {background: '#545454', borderStyle: 'solid', borderColor: '#96d303'},
     },
     'd.d.t': {
         name: 'd.d.t',
@@ -142,6 +176,7 @@ export const LAYERS = {
             'Dark Dirigible Titan',
             'It has the properties of a zebra bloon, camo bloon, lead bloon, and a MOAB-Class Bloon',
         ],
+        style: {background: '#2f2f2f', borderStyle: 'solid', borderColor: '#c3c3c3'},
     },
     'b.a.d': {
         name: 'b.a.d',
@@ -152,6 +187,7 @@ export const LAYERS = {
         ],
         speed: 0.18,
         notes: ['Big Airship of Doom', 'Resistant to most abilities and attacks, such as glue'],
+        style: {background: '#b202b5', borderStyle: 'solid', borderColor: '#6d026e'},
     },
 
     'bloonarius the inflator': {

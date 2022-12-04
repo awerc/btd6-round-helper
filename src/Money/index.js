@@ -16,9 +16,9 @@ const Money = ({data}) => {
                     placement="right"
                     title={
                         <div>
-                            {pop && <div>pop: {pop}</div>}
-                            {pop && total && <div>finish: {total - pop}</div>}
-                            {cumulative && <div>cumulative: {cumulative}</div>}
+                            {pop && <div>Pop: {pop}</div>}
+                            {pop && total && <div>Finish: {total - pop}</div>}
+                            {cumulative && <div>Cumulative: {cumulative}</div>}
                         </div>
                     }
                 >

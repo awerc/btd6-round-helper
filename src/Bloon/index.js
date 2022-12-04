@@ -5,12 +5,11 @@ import branch from '../branch';
 import './style.scss';
 import {getTooltip} from '../utils';
 
-const Bloon = ({data}) => {
-    console.log(data);
+const Bloon = ({data, size = 50}) => {
     const {name, count, mods} = data || {};
 
     let type = name?.replace(':', '').replace(/[ .]/g, '_');
-    if (mods) type += `_${mods.join('_')}`;
+    if (mods) type += `_${mods.sort().join('_')}`;
 
     const [image, setImage] = useState(null);
     useEffect(() => {
@@ -29,8 +28,12 @@ const Bloon = ({data}) => {
     return (
         <Tooltip placement="right" title={getTooltip(data)}>
             <div className="bloon">
-                <img className="icon" src={image} alt={name} />
-                {count && <span className="fancy-text count">{count}</span>}
+                <img className="icon" src={image} alt={name} height={size} />
+                {count && (
+                    <span className="fancy-text count" style={{fontSize: size / 2 - 3}}>
+                        {count}
+                    </span>
+                )}
             </div>
         </Tooltip>
     );

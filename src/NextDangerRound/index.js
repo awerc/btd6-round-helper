@@ -28,13 +28,13 @@ const NextDangerRound = ({currentRound, mode, setRound}) => {
         <>
             <Row align="middle" style={{fontSize: '16px'}}>
                 Next danger round:{' '}
-                <Button size="large" type="link" onClick={() => setRound(round)}>
+                <Button size="small" type="link" onClick={() => setRound(round)}>
                     {round}
                 </Button>
                 <Tooltip placement="right" title={danger}>
                     <QuestionCircleOutlined />
                 </Tooltip>
-                <Button size="large" type="link" onClick={toggle}>
+                <Button size="small" type="link" onClick={toggle}>
                     {expanded ? 'hide' : 'show'}
                 </Button>
             </Row>

@@ -1,13 +1,14 @@
-import React, {useState, useCallback, useMemo} from 'react';
-import {Card, Select, Statistic, Tooltip, Row, Col, Input, Button} from 'antd';
-import {PlusOutlined, MinusOutlined, QuestionCircleOutlined} from '@ant-design/icons';
+import {MinusOutlined, PlusOutlined, QuestionCircleOutlined} from '@ant-design/icons';
+import {Button, Card, Col, Collapse, Input, Row, Select, Space, Statistic, Tooltip} from 'antd';
+import React, {useCallback, useMemo, useState} from 'react';
 
-import Money from '../Money';
 import BloonsList from '../BloonsList';
+import Money from '../Money';
 import {getRound, prettifyNumber} from '../utils';
 
 import {MODES} from '../constants';
 import NextDangerRound from '../NextDangerRound';
+import Timeline from '../Timeline';
 
 const {Option} = Select;
 
@@ -19,7 +20,7 @@ const Widget = () => {
     const toggleNextRound = useCallback(() => setRoundSafe(String(+round + 1)), [round, setRoundSafe]);
     const togglePrevRound = useCallback(() => setRoundSafe(String(+round - 1)), [round, setRoundSafe]);
 
-    const {rbe, money, bloons, danger} = useMemo(() => getRound({round, mode}) || {}, [mode, round]);
+    const {rbe, money, bloons, danger, time, timeline} = useMemo(() => getRound({round, mode}) || {}, [mode, round]);
 
     return (
         <Card
@@ -54,7 +55,7 @@ const Widget = () => {
                 </Row>
             }
         >
-            <Col gutter={16}>
+            <Space direction="vertical" style={{width: '100%'}}>
                 <Row gutter={[16, 16]}>
                     <Col span={12}>
                         <Statistic
@@ -62,7 +63,18 @@ const Widget = () => {
                             value={round}
                             suffix={
                                 rbe && (
-                                    <Tooltip placement="right" title={`RBE: ${prettifyNumber(rbe)}`}>
+                                    <Tooltip
+                                        placement="right"
+                                        title={
+                                            <Space size={0} direction="vertical">
+                                                <span>RBE: {prettifyNumber(rbe.current ?? '')}</span>
+                                                {rbe.cumulative && (
+                                                    <span>Cumulative RBE: {prettifyNumber(rbe.cumulative)}</span>
+                                                )}
+                                                {time && <span>Spawn time: {prettifyNumber(time)}s</span>}
+                                            </Space>
+                                        }
+                                    >
                                         <QuestionCircleOutlined />
                                     </Tooltip>
                                 )
@@ -75,18 +87,16 @@ const Widget = () => {
                         </Col>
                     )}
                 </Row>
-                {console.log('widget', bloons)}
-                <Row gutter={[16, 16]}>
-                    <Col span={24}>
-                        <Statistic
-                            title="Bloons"
-                            value={<BloonsList {...{bloons, danger}} />}
-                            formatter={value => value}
-                        />
-                    </Col>
-                </Row>
+                <Statistic title="Bloons" value={<BloonsList {...{bloons, danger}} />} formatter={value => value} />
                 <NextDangerRound currentRound={round} mode={mode} setRound={setRound} />
-            </Col>
+                {timeline && (
+                    <Collapse>
+                        <Collapse.Panel header={`Timeline (${time}s)`}>
+                            <Timeline time={time} timeline={timeline} />
+                        </Collapse.Panel>
+                    </Collapse>
+                )}
+            </Space>
         </Card>
     );
 };
