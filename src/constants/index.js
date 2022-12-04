@@ -1,8 +1,8 @@
 import {ROUNDS} from './rounds';
 import {ALTERNATE_ROUNDS} from './alternateRounds';
-import {LAYERS} from './layers';
+import {TYPE, LAYERS} from './layers';
 
-export {ROUNDS, ALTERNATE_ROUNDS, LAYERS};
+export {TYPE, ROUNDS, ALTERNATE_ROUNDS, LAYERS};
 
 export const MODES = {
     normal: 'normal',

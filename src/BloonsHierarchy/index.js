@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Col, Row, Typography} from 'antd';
 import Bloon from '../Bloon';
-import {LAYERS} from '../constants';
+import {LAYERS, TYPE} from '../constants';
 
 import './style.scss';
 
@@ -21,14 +21,12 @@ const BloonWithChildren = data => (
     </div>
 );
 
-const SPECIAL_BLOONS = [
-    'golden',
-    'ghost',
-    'bloonarius the inflator',
-    'vortex: deadly master of air',
-    'dreadbloon: armored behemoth',
-    'blastapopoulos: demon of the core',
-];
+const SPECIAL_BLOONS = Object.values(LAYERS)
+    .filter(x => x.type === TYPE.special)
+    .map(x => x.name);
+const BOSS_BLOONS = Object.values(LAYERS)
+    .filter(x => x.type === TYPE.boss)
+    .map(x => x.name);
 
 const RoundsTable = () => {
     return (
@@ -44,9 +42,17 @@ const RoundsTable = () => {
                 <BloonWithChildren {...LAYERS['lead']} />
                 <BloonWithChildren {...LAYERS['purple']} />
             </Row>
-            <Title level={3}>Special event bloons</Title>
+            <Title level={3}>Special bloons</Title>
             <Row gutter={12}>
                 {SPECIAL_BLOONS.map(name => (
+                    <Col key={name}>
+                        <BloonWithChildren {...LAYERS[name]} />
+                    </Col>
+                ))}
+            </Row>
+            <Title level={3}>Boss bloons</Title>
+            <Row gutter={12}>
+                {BOSS_BLOONS.map(name => (
                     <Col key={name}>
                         <BloonWithChildren {...LAYERS[name]} />
                     </Col>

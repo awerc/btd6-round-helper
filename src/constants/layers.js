@@ -1,3 +1,8 @@
+export const TYPE = {
+    special: 'special',
+    boss: 'boss',
+};
+
 export const LAYERS = {
     red: {
         name: 'red',
@@ -70,9 +75,7 @@ export const LAYERS = {
     rainbow: {
         name: 'rainbow',
         rbe: 47,
-        children: [
-            {name: 'zebra', count: 2},
-        ],
+        children: [{name: 'zebra', count: 2}],
         speed: 2.2,
     },
     ceramic: {
@@ -84,6 +87,7 @@ export const LAYERS = {
     },
     golden: {
         name: 'golden',
+        type: TYPE.special,
         rbe: 300,
         children: [],
         speed: 3.5,
@@ -95,6 +99,7 @@ export const LAYERS = {
     },
     ghost: {
         name: 'ghost',
+        type: TYPE.special,
         rbe: 10000000,
         children: [],
         speed: 1,
@@ -148,24 +153,47 @@ export const LAYERS = {
         speed: 0.18,
         notes: ['Big Airship of Doom', 'Resistant to most abilities and attacks, such as glue'],
     },
+
     'bloonarius the inflator': {
         name: 'bloonarius the inflator',
+        type: TYPE.boss,
         children: [],
-        speed: 0.1,
         notes: [
-            'When its health reaches 3/4, 1/2 and 1/4, it will spawn a random bloon - this ranges from lead to Z.O.M.G.',
+            'Slowest Bloon in BTD series,',
+            'Strongest Non-Infinite Scaling Boss Bloon in BTD series',
+            'Immunities to many abilities',
+            'Immune to all types of slowing (SSB, etc.)',
+            'Immune to all knockback attacks (MOAB Press, MOAB Shove, etc.)',
         ],
     },
     'vortex: deadly master of air': {
         name: 'vortex: deadly master of air',
+        type: TYPE.boss,
         children: [],
-        speed: 0.2,
         notes: [
-            'When its health reaches 3/4, 1/2 and 1/4, it leaves a trail of smoke that slows the attack speed of nearby towers for a short time',
+            'A Fast Boss Bloon which sends out a shockwave that stuns all towers near it, including Paragons, when it reaches one of Its Skull’s, It retreats with a Shield Protecting it from all Projectiles.',
         ],
+    },
+    'gravelord lych': {
+        name: 'gravelord lych',
+        type: TYPE.boss,
+        children: [],
+        notes: [
+            'Capable of sapping applied and/or temporary buffs, healing itself and stunning affected towers',
+            'Can resurrect Lych-Soul, a super fast version of Lych that slowly drains lives.',
+            'Can summon Resurrected Blimps from recently popped MOAB-class bloons, giving them much more HP and speed but produces no children.',
+            'Can become ethereal, becoming invincible until all offspring on screen are popped',
+        ],
+    },
+    'lych-soul': {
+        name: 'lych-soul',
+        type: TYPE.boss,
+        children: [],
+        notes: ['A mini Lych, a super fast version of Lych that slowly drains lives.'],
     },
     'dreadbloon: armored behemoth': {
         name: 'dreadbloon: armored behemoth',
+        type: TYPE.boss,
         children: [],
         speed: 0.15,
         notes: [
@@ -175,6 +203,7 @@ export const LAYERS = {
     },
     'blastapopoulos: demon of the core': {
         name: 'blastapopoulos: demon of the core',
+        type: TYPE.boss,
         children: [],
         speed: 0.18,
         notes: [

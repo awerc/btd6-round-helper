@@ -6,9 +6,10 @@ import './style.scss';
 import {getTooltip} from '../utils';
 
 const Bloon = ({data}) => {
+    console.log(data);
     const {name, count, mods} = data || {};
 
-    let type = name.replace(':', '').replace(/[ .]/g, '_');
+    let type = name?.replace(':', '').replace(/[ .]/g, '_');
     if (mods) type += `_${mods.join('_')}`;
 
     const [image, setImage] = useState(null);
