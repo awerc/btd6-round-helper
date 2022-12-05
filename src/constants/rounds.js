@@ -1082,6 +1082,7 @@ export const ROUNDS = [
     },
     {
         round: '24',
+        danger: 'First camo',
         rbe: {
             current: 43,
             cumulative: 2611,
@@ -1125,6 +1126,7 @@ export const ROUNDS = [
     },
     {
         round: '25',
+        danger: 'First puple',
         rbe: {
             current: 210,
             cumulative: 2821,
@@ -1270,6 +1272,7 @@ export const ROUNDS = [
     },
     {
         round: '28',
+        danger: 'First lead',
         rbe: {
             current: 138,
             cumulative: 3701,
@@ -1443,7 +1446,7 @@ export const ROUNDS = [
             cumulative: 5069,
         },
         money: {
-            pop: 545,
+            pop: 495,
             total: 627,
             cumulative: 8797,
         },
@@ -1493,6 +1496,7 @@ export const ROUNDS = [
     },
     {
         round: '33',
+        danger: 'More camo',
         rbe: {
             current: 72,
             cumulative: 5141,
@@ -2140,7 +2144,7 @@ export const ROUNDS = [
             cumulative: 19483,
         },
         money: {
-            pop: 2289,
+            pop: 2277,
             total: 2422,
             cumulative: 24690,
         },
@@ -2498,8 +2502,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 947,
-            total: 1098,
-            cumulative: 38758,
+            total: 1023,
+            cumulative: 38683,
         },
         bloons: [
             {
@@ -2542,9 +2546,9 @@ export const ROUNDS = [
             cumulative: 38305,
         },
         money: {
-            pop: 1444,
-            total: 1596,
-            cumulative: 40354,
+            pop: 1443,
+            total: 1519,
+            cumulative: 40202,
         },
         bloons: [
             {
@@ -2606,8 +2610,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 771,
-            total: 924,
-            cumulative: 41278,
+            total: 848,
+            cumulative: 41050,
         },
         bloons: [
             {
@@ -2660,9 +2664,9 @@ export const ROUNDS = [
             cumulative: 45425,
         },
         money: {
-            pop: 2044,
-            total: 2198,
-            cumulative: 43476,
+            pop: 2043,
+            total: 2120,
+            cumulative: 43170,
         },
         bloons: [
             {
@@ -2708,8 +2712,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 2328,
-            total: 2483,
-            cumulative: 45959,
+            total: 2405,
+            cumulative: 45575,
         },
         bloons: [
             {
@@ -2767,8 +2771,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 1130,
-            total: 1286,
-            cumulative: 47245,
+            total: 1208,
+            cumulative: 46783,
         },
         bloons: [
             {
@@ -2810,8 +2814,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 1702,
-            total: 1859,
-            cumulative: 49104,
+            total: 1780,
+            cumulative: 48563,
         },
         bloons: [
             {
@@ -2857,8 +2861,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 2140,
-            total: 2298,
-            cumulative: 51402,
+            total: 2219,
+            cumulative: 50782,
         },
         bloons: [
             {
@@ -2911,8 +2915,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 2000,
-            total: 2159,
-            cumulative: 53561,
+            total: 2079,
+            cumulative: 52861,
         },
         bloons: [
             {
@@ -2965,9 +2969,9 @@ export const ROUNDS = [
             cumulative: 70775,
         },
         money: {
-            pop: 763,
-            total: 923,
-            cumulative: 54484,
+            pop: 762,
+            total: 842,
+            cumulative: 53703,
         },
         bloons: [
             {
@@ -2996,9 +3000,9 @@ export const ROUNDS = [
             cumulative: 77305,
         },
         money: {
-            pop: 1070,
-            total: 1231,
-            cumulative: 55715,
+            pop: 1071,
+            total: 1103,
+            cumulative: 54806,
         },
         bloons: [
             {
@@ -3040,9 +3044,9 @@ export const ROUNDS = [
             cumulative: 85552,
         },
         money: {
-            pop: 1225,
-            total: 1387,
-            cumulative: 57102,
+            pop: 1224,
+            total: 1256,
+            cumulative: 56062,
         },
         bloons: [
             {
@@ -3107,8 +3111,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 2663,
-            total: 2826,
-            cumulative: 59928,
+            total: 2695,
+            cumulative: 58757,
         },
         bloons: [
             {
@@ -3159,9 +3163,9 @@ export const ROUNDS = [
             cumulative: 106229,
         },
         money: {
-            pop: 686,
-            total: 850,
-            cumulative: 60778,
+            pop: 685,
+            total: 718,
+            cumulative: 59475,
         },
         bloons: [
             {
@@ -3203,8 +3207,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 2906,
-            total: 3071,
-            cumulative: 63849,
+            total: 2939,
+            cumulative: 62414,
         },
         bloons: [
             {
@@ -3274,8 +3278,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 838,
-            total: 1004,
-            cumulative: 64853,
+            total: 871,
+            cumulative: 63285,
         },
         bloons: [
             {
@@ -3329,9 +3333,9 @@ export const ROUNDS = [
             cumulative: 139101,
         },
         money: {
-            pop: 857,
-            total: 1024,
-            cumulative: 65877,
+            pop: 856,
+            total: 890,
+            cumulative: 64175,
         },
         bloons: [
             {
@@ -3378,9 +3382,9 @@ export const ROUNDS = [
             cumulative: 144729,
         },
         money: {
-            pop: 610,
-            total: 778,
-            cumulative: 66655,
+            pop: 609,
+            total: 643,
+            cumulative: 64818,
         },
         bloons: [
             {
@@ -3420,8 +3424,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 1222,
-            total: 1391,
-            cumulative: 68046,
+            total: 1255,
+            cumulative: 66073,
         },
         bloons: [
             {
@@ -3474,9 +3478,9 @@ export const ROUNDS = [
             cumulative: 164593,
         },
         money: {
-            pop: 2449,
-            total: 2619,
-            cumulative: 70665,
+            pop: 2448,
+            total: 2482,
+            cumulative: 68555,
         },
         bloons: [
             {
@@ -3528,8 +3532,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 1332,
-            total: 1503,
-            cumulative: 72168,
+            total: 1366,
+            cumulative: 69921,
         },
         bloons: [
             {
@@ -3569,8 +3573,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 1332,
-            total: 1504,
-            cumulative: 73672,
+            total: 1366,
+            cumulative: 71287,
         },
         bloons: [
             {
@@ -3617,9 +3621,9 @@ export const ROUNDS = [
             cumulative: 195409,
         },
         money: {
-            pop: 1220,
-            total: 1392,
-            cumulative: 75064,
+            pop: 1219,
+            total: 1254,
+            cumulative: 72541,
         },
         bloons: [
             {
@@ -3665,8 +3669,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 2870,
-            total: 3044,
-            cumulative: 78108,
+            total: 2904,
+            cumulative: 75445,
         },
         bloons: [
             {
@@ -3729,9 +3733,9 @@ export const ROUNDS = [
             cumulative: 238865,
         },
         money: {
-            pop: 2493,
-            total: 2668,
-            cumulative: 80776,
+            pop: 2492,
+            total: 2527,
+            cumulative: 77972,
         },
         bloons: [
             {
@@ -3814,8 +3818,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 1140,
-            total: 1316,
-            cumulative: 82092,
+            total: 1175,
+            cumulative: 79147,
         },
         bloons: [
             {
@@ -3847,8 +3851,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 2363,
-            total: 2540,
-            cumulative: 84632,
+            total: 2398,
+            cumulative: 81545,
         },
         bloons: [
             {
@@ -3889,8 +3893,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 4684,
-            total: 4862,
-            cumulative: 89494,
+            total: 4719,
+            cumulative: 86264,
         },
         bloons: [
             {
@@ -3962,8 +3966,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 6530,
-            total: 6709,
-            cumulative: 96203,
+            total: 6565,
+            cumulative: 92829,
         },
         bloons: [
             {
@@ -4018,8 +4022,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 1220,
-            total: 1400,
-            cumulative: 97603,
+            total: 1256,
+            cumulative: 94085,
         },
         bloons: [
             {
@@ -4049,8 +4053,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 5185,
-            total: 5366,
-            cumulative: 102969,
+            total: 5221,
+            cumulative: 99306,
         },
         bloons: [
             {
@@ -4086,8 +4090,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 4575,
-            total: 4757,
-            cumulative: 107726,
+            total: 4611,
+            cumulative: 103917,
         },
         bloons: [
             {
@@ -4129,8 +4133,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 4566,
-            total: 4749,
-            cumulative: 112475,
+            total: 4602,
+            cumulative: 108519,
         },
         bloons: [
             {
@@ -4194,8 +4198,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 6860,
-            total: 7044,
-            cumulative: 119519,
+            total: 6896,
+            cumulative: 115415,
         },
         bloons: [
             {
@@ -4235,9 +4239,9 @@ export const ROUNDS = [
             cumulative: 560633,
         },
         money: {
-            pop: 2441,
-            total: 2626,
-            cumulative: 122145,
+            pop: 2440,
+            total: 2477,
+            cumulative: 117892,
         },
         bloons: [
             {
@@ -4267,8 +4271,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 762,
-            total: 948,
-            cumulative: 123093,
+            total: 781,
+            cumulative: 118673,
         },
         bloons: [
             {
@@ -4300,8 +4304,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 2440,
-            total: 2627,
-            cumulative: 125720,
+            total: 2459,
+            cumulative: 121132,
         },
         bloons: [
             {
@@ -4331,8 +4335,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 3126,
-            total: 3314,
-            cumulative: 129034,
+            total: 3144,
+            cumulative: 124276,
         },
         bloons: [
             {
@@ -4382,8 +4386,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 1982,
-            total: 2171,
-            cumulative: 131205,
+            total: 2000,
+            cumulative: 126276,
         },
         bloons: [
             {
@@ -4421,15 +4425,15 @@ export const ROUNDS = [
     },
     {
         round: '90',
-        dange: 'Starts of DDTs. Also an Alchemist Farm round',
+        danger: 'Starts of DDTs. Also an Alchemist Farm round',
         rbe: {
             current: 2756,
             cumulative: 781421,
         },
         money: {
-            pop: 150,
-            total: 340,
-            cumulative: 131545,
+            pop: 149,
+            total: 168,
+            cumulative: 126444,
         },
         bloons: [
             {
@@ -4472,8 +4476,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 4000,
-            total: 4191,
-            cumulative: 135736,
+            total: 4019,
+            cumulative: 130463,
         },
         bloons: [
             {
@@ -4515,8 +4519,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 4345,
-            total: 4537,
-            cumulative: 140273,
+            total: 4364,
+            cumulative: 134827,
         },
         bloons: [
             {
@@ -4557,9 +4561,9 @@ export const ROUNDS = [
             cumulative: 1032925,
         },
         money: {
-            pop: 1754,
-            total: 1947,
-            cumulative: 142220,
+            pop: 1753,
+            total: 1772,
+            cumulative: 136599,
         },
         bloons: [
             {
@@ -4602,8 +4606,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 7473,
-            total: 7667,
-            cumulative: 149887,
+            total: 7492,
+            cumulative: 144091,
         },
         bloons: [
             {
@@ -4644,8 +4648,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 3523,
-            total: 3718,
-            cumulative: 153605,
+            total: 3542,
+            cumulative: 147633,
         },
         bloons: [
             {
@@ -4712,8 +4716,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 9759,
-            total: 9955,
-            cumulative: 163560,
+            total: 9779,
+            cumulative: 157412,
         },
         bloons: [
             {
@@ -4783,9 +4787,9 @@ export const ROUNDS = [
             cumulative: 1600833,
         },
         money: {
-            pop: 1221,
-            total: 1418,
-            cumulative: 164978,
+            pop: 1220,
+            total: 1239,
+            cumulative: 158651,
         },
         bloons: [
             {
@@ -4817,8 +4821,8 @@ export const ROUNDS = [
         },
         money: {
             pop: 9455,
-            total: 9653,
-            cumulative: 174631,
+            total: 9475,
+            cumulative: 168126,
         },
         bloons: [
             {
@@ -4859,9 +4863,9 @@ export const ROUNDS = [
             cumulative: 1975713,
         },
         money: {
-            pop: 2629,
-            total: 2828,
-            cumulative: 177459,
+            pop: 2628,
+            total: 2648,
+            cumulative: 170774,
         },
         bloons: [
             {
@@ -4896,6 +4900,38 @@ export const ROUNDS = [
         ],
     },
     {
+        round: '100',
+        danger: 'One BAD bloon',
+        rbe: {
+            current: 401346,
+            cumulative: 22450553,
+        },
+        money: {
+            pop: 1334,
+            total: 1354,
+            cumulative: 172128,
+        },
+        bloons: [
+            {
+                name: 'b.a.d',
+                count: 1,
+            },
+        ],
+        xp: {
+            current: 9630,
+            cumulative: 551080,
+        },
+        time: 45,
+        timeline: [
+            {
+                name: 'b.a.d',
+                count: 1,
+                start: 0,
+                end: 0,
+            },
+        ],
+    },
+    {
         round: '101',
         bloons: [
             {
@@ -4920,7 +4956,7 @@ export const ROUNDS = [
         money: {
             pop: 563,
             total: 573,
-            cumulative: 173374,
+            cumulative: 172701,
         },
         xp: {
             current: 6210,
@@ -4994,7 +5030,7 @@ export const ROUNDS = [
         money: {
             pop: 2249,
             total: 2259,
-            cumulative: 175633,
+            cumulative: 174960,
         },
         xp: {
             current: 6300,
@@ -5080,7 +5116,7 @@ export const ROUNDS = [
         money: {
             pop: 5967,
             total: 5977,
-            cumulative: 181611,
+            cumulative: 180937,
         },
         xp: {
             current: 6390,
@@ -5161,7 +5197,7 @@ export const ROUNDS = [
         money: {
             pop: 6841,
             total: 6851,
-            cumulative: 188462,
+            cumulative: 187788,
         },
         xp: {
             current: 6480,
@@ -5290,7 +5326,7 @@ export const ROUNDS = [
         money: {
             pop: 4196,
             total: 4206,
-            cumulative: 192669,
+            cumulative: 191994,
         },
         xp: {
             current: 6570,
@@ -5346,7 +5382,7 @@ export const ROUNDS = [
         money: {
             pop: 1771,
             total: 1781,
-            cumulative: 194451,
+            cumulative: 193775,
         },
         xp: {
             current: 6660,
@@ -5431,7 +5467,7 @@ export const ROUNDS = [
         money: {
             pop: 3658,
             total: 3669,
-            cumulative: 198120,
+            cumulative: 197444,
         },
         xp: {
             current: 6750,
@@ -5482,7 +5518,7 @@ export const ROUNDS = [
         money: {
             pop: 5185,
             total: 5196,
-            cumulative: 203316,
+            cumulative: 202640,
         },
         xp: {
             current: 6840,
@@ -5538,7 +5574,7 @@ export const ROUNDS = [
         money: {
             pop: 7439,
             total: 7449,
-            cumulative: 210766,
+            cumulative: 210089,
         },
         xp: {
             current: 6930,
@@ -5611,7 +5647,7 @@ export const ROUNDS = [
         money: {
             pop: 2477,
             total: 2488,
-            cumulative: 213254,
+            cumulative: 212577,
         },
         xp: {
             current: 7020,
@@ -5675,7 +5711,7 @@ export const ROUNDS = [
         money: {
             pop: 7931,
             total: 7941,
-            cumulative: 221196,
+            cumulative: 220518,
         },
         xp: {
             current: 7110,
@@ -5725,7 +5761,7 @@ export const ROUNDS = [
         money: {
             pop: 1867,
             total: 1878,
-            cumulative: 223074,
+            cumulative: 222396,
         },
         xp: {
             current: 7200,
@@ -5780,7 +5816,7 @@ export const ROUNDS = [
         money: {
             pop: 2118,
             total: 2129,
-            cumulative: 225204,
+            cumulative: 224525,
         },
         xp: {
             current: 7290,
@@ -5865,7 +5901,7 @@ export const ROUNDS = [
         money: {
             pop: 5394,
             total: 5404,
-            cumulative: 230609,
+            cumulative: 229929,
         },
         xp: {
             current: 7380,
@@ -5975,7 +6011,7 @@ export const ROUNDS = [
         money: {
             pop: 5394,
             total: 5404,
-            cumulative: 236013,
+            cumulative: 235333,
         },
         xp: {
             current: 7470,
@@ -6063,7 +6099,7 @@ export const ROUNDS = [
         money: {
             pop: 3932,
             total: 3943,
-            cumulative: 239957,
+            cumulative: 239276,
         },
         xp: {
             current: 7560,
@@ -6129,7 +6165,7 @@ export const ROUNDS = [
         money: {
             pop: 944,
             total: 955,
-            cumulative: 240913,
+            cumulative: 240231,
         },
         xp: {
             current: 7650,
@@ -6179,7 +6215,7 @@ export const ROUNDS = [
         money: {
             pop: 3622,
             total: 3632,
-            cumulative: 244546,
+            cumulative: 243863,
         },
         xp: {
             current: 7740,
@@ -6217,7 +6253,7 @@ export const ROUNDS = [
         money: {
             pop: 2001,
             total: 2012,
-            cumulative: 246559,
+            cumulative: 245875,
         },
         xp: {
             current: 7830,
@@ -6263,7 +6299,7 @@ export const ROUNDS = [
         money: {
             pop: 5032,
             total: 5043,
-            cumulative: 251602,
+            cumulative: 250918,
         },
         xp: {
             current: 7920,
@@ -6318,7 +6354,7 @@ export const ROUNDS = [
         money: {
             pop: 1372,
             total: 1376,
-            cumulative: 252979,
+            cumulative: 252294,
         },
         xp: {
             current: 8010,
@@ -6374,7 +6410,7 @@ export const ROUNDS = [
         money: {
             pop: 1840,
             total: 1844,
-            cumulative: 254824,
+            cumulative: 254138,
         },
         xp: {
             current: 8100,
@@ -6438,7 +6474,7 @@ export const ROUNDS = [
         money: {
             pop: 2500,
             total: 2504,
-            cumulative: 257329,
+            cumulative: 256642,
         },
         xp: {
             current: 8190,
@@ -6477,7 +6513,7 @@ export const ROUNDS = [
         money: {
             pop: 2287,
             total: 2291,
-            cumulative: 259621,
+            cumulative: 258933,
         },
         xp: {
             current: 8280,
@@ -6517,7 +6553,7 @@ export const ROUNDS = [
         money: {
             pop: 2493,
             total: 2497,
-            cumulative: 262118,
+            cumulative: 261430,
         },
         xp: {
             current: 8370,
@@ -6660,7 +6696,7 @@ export const ROUNDS = [
         money: {
             pop: 754,
             total: 759,
-            cumulative: 262877,
+            cumulative: 262189,
         },
         xp: {
             current: 8460,
@@ -6703,7 +6739,7 @@ export const ROUNDS = [
         money: {
             pop: 1097,
             total: 1102,
-            cumulative: 263980,
+            cumulative: 263291,
         },
         xp: {
             current: 8550,
@@ -6750,7 +6786,7 @@ export const ROUNDS = [
         money: {
             pop: 1287,
             total: 1291,
-            cumulative: 265272,
+            cumulative: 264582,
         },
         xp: {
             current: 8640,
@@ -6819,7 +6855,7 @@ export const ROUNDS = [
         money: {
             pop: 2011,
             total: 2016,
-            cumulative: 267288,
+            cumulative: 266598,
         },
         xp: {
             current: 8730,
@@ -6920,7 +6956,7 @@ export const ROUNDS = [
         money: {
             pop: 1554,
             total: 1559,
-            cumulative: 268847,
+            cumulative: 268157,
         },
         xp: {
             current: 8820,
@@ -7033,7 +7069,7 @@ export const ROUNDS = [
         money: {
             pop: 2196,
             total: 2200,
-            cumulative: 271048,
+            cumulative: 270357,
         },
         xp: {
             current: 8910,
@@ -7075,7 +7111,7 @@ export const ROUNDS = [
         money: {
             pop: 2952,
             total: 2957,
-            cumulative: 274005,
+            cumulative: 273314,
         },
         xp: {
             current: 9000,
@@ -7175,7 +7211,7 @@ export const ROUNDS = [
         money: {
             pop: 3439,
             total: 3443,
-            cumulative: 277449,
+            cumulative: 276757,
         },
         xp: {
             current: 9090,
@@ -7301,7 +7337,7 @@ export const ROUNDS = [
         money: {
             pop: 1220,
             total: 1224,
-            cumulative: 278673,
+            cumulative: 277981,
         },
         xp: {
             current: 9180,
@@ -7363,7 +7399,7 @@ export const ROUNDS = [
         money: {
             pop: 1868,
             total: 1873,
-            cumulative: 280546,
+            cumulative: 279854,
         },
         xp: {
             current: 9270,
@@ -7428,7 +7464,7 @@ export const ROUNDS = [
         money: {
             pop: 1463,
             total: 1468,
-            cumulative: 282015,
+            cumulative: 281322,
         },
         xp: {
             current: 9360,
@@ -7474,7 +7510,7 @@ export const ROUNDS = [
         money: {
             pop: 3294,
             total: 3298,
-            cumulative: 285313,
+            cumulative: 284620,
         },
         xp: {
             current: 9450,
@@ -7522,7 +7558,7 @@ export const ROUNDS = [
         money: {
             pop: 952,
             total: 957,
-            cumulative: 286271,
+            cumulative: 285577,
         },
         xp: {
             current: 9540,
@@ -7594,7 +7630,7 @@ export const ROUNDS = [
         money: {
             pop: 1927,
             total: 1932,
-            cumulative: 288203,
+            cumulative: 287509,
         },
         xp: {
             current: 9630,
@@ -7682,7 +7718,7 @@ export const ROUNDS = [
         money: {
             pop: 533,
             total: 538,
-            cumulative: 288742,
+            cumulative: 288047,
         },
         xp: {
             current: 9720,
