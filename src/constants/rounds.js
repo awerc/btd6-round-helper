@@ -4892,7 +4892,7 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 9,
                 start: 6.51,
                 end: 11.51,
@@ -5073,7 +5073,7 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 12,
                 start: 19.5,
                 end: 46.5,
@@ -5413,21 +5413,21 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 12,
                 start: 15,
                 end: 30,
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 9,
                 start: 20,
                 end: 30,
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 6,
                 start: 25,
                 end: 30,
@@ -5677,14 +5677,14 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 6,
                 start: 22,
                 end: 30,
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 6,
                 start: 30,
                 end: 36,
@@ -5778,7 +5778,7 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 21,
                 start: 7,
                 end: 20,
@@ -5925,7 +5925,7 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 6,
                 start: 2.5,
                 end: 30,
@@ -6035,7 +6035,7 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 6,
                 start: 2.5,
                 end: 30,
@@ -6188,7 +6188,7 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 18,
                 start: 3,
                 end: 14,
@@ -6231,7 +6231,7 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 30,
                 start: 7.5,
                 end: 14.5,
@@ -6796,7 +6796,7 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 39,
                 start: 0,
                 end: 18,
@@ -7018,7 +7018,7 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 3,
                 start: 24,
                 end: 24,
@@ -7032,7 +7032,7 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 3,
                 start: 32,
                 end: 32,
@@ -7423,21 +7423,21 @@ export const ROUNDS = [
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 7,
                 start: 0,
                 end: 24,
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 7,
                 start: 0,
                 end: 24,
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 7,
                 start: 0,
                 end: 24,
@@ -7568,21 +7568,21 @@ export const ROUNDS = [
         timeline: [
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 33,
                 start: 0,
                 end: 40,
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 27,
                 start: 7,
                 end: 40,
             },
             {
                 name: 'd.d.t',
-                mods: ['camo', 'fortified'],
+                mods: ['fortified'],
                 count: 21,
                 start: 14,
                 end: 40,
